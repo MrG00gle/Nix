@@ -28,6 +28,7 @@
     bottles
     mission-center
     mangohud
+    sidequest
     
     # Coding stuff
     vscode
@@ -35,8 +36,7 @@
     jetbrains.pycharm-professional
     gcc
     ollama
-    python313
-    python311
+    python312
     python310
     python39
     
