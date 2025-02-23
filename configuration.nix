@@ -2,7 +2,6 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/bundle.nix
-    ./home-manager/home.nix
   ];
   
     # Bootloader.
@@ -11,8 +10,7 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
-  # Printer
-  services.printing.enable = false;
+  services.printing.enable = false;  # Printer
 
   time.timeZone = "Europe/Warsaw";
 

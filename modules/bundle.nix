@@ -6,5 +6,6 @@
     ./sound.nix
     ./keyboard.nix
     ./gpu.nix
+    ./home-manager/home.nix
   ];
 }
