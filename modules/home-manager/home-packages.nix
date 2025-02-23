@@ -27,6 +27,7 @@
     # Gaming stuff
     bottles
     mission-center
+    mangohud
     
     # Coding stuff
     vscode
@@ -38,6 +39,7 @@
     python311
     python310
     python39
+    
     # CLI utils
     neofetch
     nano
