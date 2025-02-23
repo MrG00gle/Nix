@@ -15,7 +15,7 @@
 
     histSize = 10000;
 
-    oh-my-zsh = {
+    ohMyZsh = {
       enable = true;
       plugins = [ "git" "sudo"];
       theme = "agnoster";
