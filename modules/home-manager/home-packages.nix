@@ -36,9 +36,9 @@
     jetbrains.pycharm-professional
     gcc
     ollama
-    python312
-    python311
-    python39
+    #python312
+    #python311
+    #python39
     
     # CLI utils
     neofetch
@@ -55,7 +55,9 @@
     scrot
     ffmpeg
     nmap
+    fish
     zsh-powerlevel10k
+    nix-output-monitor
 
     # GNOME extentions
     gnomeExtensions.appindicator

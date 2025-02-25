@@ -10,7 +10,7 @@
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
       upgrade = "sudo nixos-rebuild switch --upgrade";
-      test = "sudo nixos-rebuild test";
+      test = "sudo nixos-rebuild test |& nom";
       pingtest = "ping 8.8.8.8";
     };
 

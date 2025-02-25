@@ -4,6 +4,7 @@
     cheese # webcam tool
     gnome-music
     gnome-photos
+    epiphany # gnome browser
     gnome-tour
     hitori # sudoku game
     iagno # go game
