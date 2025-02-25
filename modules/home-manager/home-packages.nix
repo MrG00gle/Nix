@@ -36,9 +36,9 @@
     jetbrains.pycharm-professional
     gcc
     ollama
-    #python312
-    #python311
-    #python39
+    #python312  # collision
+    #python311  # collision
+    #python39   # collision
     
     # CLI utils
     neofetch
