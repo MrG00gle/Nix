@@ -29,7 +29,7 @@
     mission-center
     mangohud
     sidequest
-    
+
     # Coding stuff
     vscode
     jetbrains.pycharm-community
@@ -37,7 +37,7 @@
     gcc
     ollama
     python312
-    python310
+    python311
     python39
     
     # CLI utils
@@ -55,5 +55,15 @@
     scrot
     ffmpeg
     nmap
+    zsh-powerlevel10k
+
+    # GNOME extentions
+    gnomeExtensions.appindicator
+    gnomeExtensions.bluetooth-battery-meter
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.auto-move-windows
+    gnomeExtensions.clipboard-indicator
+    gnomeExtensions.vitals
+    gnomeExtensions.search-light
   ];
 }

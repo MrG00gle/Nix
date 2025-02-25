@@ -4,6 +4,7 @@
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
+    histSize = 10000;
 
     shellAliases = {
       ll = "ls -l";
@@ -13,12 +14,10 @@
       pingtest = "ping 8.8.8.8";
     };
 
-    histSize = 10000;
-
     ohMyZsh = {
       enable = true;
-      plugins = [ "git" "sudo"];
-      theme = "agnoster";
+      plugins = [ "git" "history" "zsh-autosuggestions" "zsh-syntax-highlighting" "docker" "sudo"];
+      theme = "powerlevel10k/powerlevel10k";
     };
 };
 
