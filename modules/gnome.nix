@@ -34,7 +34,7 @@
         "org/gnome/desktop/interface" = {
           color-scheme = "prefer-dark";                                       # Setting Gnome Dark theme
           show-battery-percentage = true;                                     # Show battery precentage
-        }
+        };
 
         # "org/gnome/desktop/privacy" = {
         #   remember-recent-files = true;                                       # Show reccent files
@@ -45,12 +45,12 @@
           lock-enabled = true;                                                # TODO: dont know what its doing so turn on for now
           color-shading-type = "solid";
           picture-options = "zoom";
-        }
+        };
 
         "org/gnome/desktop/wm/preferences" = {
           resize-with-right-button = true;                                    # Turning on window resizing
           button-layout = "appmenu:minimize,maximize,close";
-        }
+        };
 
         "org/gnome/settings-daemon/plugins/power" = {
           # Suspend only on battery power, not while charging.
@@ -88,7 +88,7 @@
           show-icons-notifications-counter = false;
           show-mounts = false;
           transparency-mode = "FIXED";
-        }
+        };
 
         /org/gnome/shell/extensions/search-light = {
           background-color = (0.14117647707462311, 0.14117647707462311, 0.14117647707462311, 1.0);
@@ -106,14 +106,14 @@
           show-panel-icon = false;
           text-color = (1.0, 1.0, 1.0, 1.0);
           unit-converter = true;
-        }
+        };
 
         # Keybindings
         "org/gnome/desktop/wm/keybindings" = {
           switch-to-workspace-left = ["<Super>Left"];
           switch-to-workspace-right= ["<Super>Right"];
           switch-input-source = ["<Super>space"];                         # TODO: Test the setting <Space> or <SpaceBar>
-        }
+        };
 
         "org/gnome/settings-daemon/plugins/media-keys" = {
           screenreader = mkEmptyArray type.string;
