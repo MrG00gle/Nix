@@ -12,7 +12,7 @@
       update = "sudo nixos-rebuild switch |& nom";
       upgrade = "sudo nixos-rebuild switch --upgrade |& nom";
       test = "sudo nixos-rebuild test |& nom";
-      test-upgrade = "sudo nixos-rebuild test --upgrade |& nom";;
+      test-upgrade = "sudo nixos-rebuild test --upgrade |& nom";
       test-trace = "sudo nixos-rebuild test --show-trace";
       pingtest = "ping 8.8.8.8";
     };
