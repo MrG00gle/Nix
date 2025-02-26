@@ -14,7 +14,7 @@
         "org/gnome/desktop/input-sources" = with lib.gvariant; {
           sources = [(mkTuple [ "xkb" "pl" ]) (mkTuple [ "xkb" "ru" ])];
           xkb-options = ["grp:win_space_toggle" "lv3:ralt_switch"];
-        }
+        };
 
         # Desktop settings
           "org/gnome/desktop/media-handling".automount = false;                 # Turning off the automout on incert
