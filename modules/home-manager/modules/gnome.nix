@@ -9,7 +9,7 @@
           "org/gnome/desktop/media-handling".automount = false;                 # Turning off the automout on incert
           "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";         # Turning off mouse acceleration
           "org/gnome/desktop/peripherals/touchpad".two-finger-scrolling-enabled = true;
-          "org/gnome/desktop/session".idle-delay = gvariant.mkUint32 0;         # Time till idle
+          "org/gnome/desktop/session".idle-delay = lib.gvariant.mkUint32 0;         # Time till idle
 
           "org/gnome/desktop/interface" = {
             color-scheme = "prefer-dark";                                       # Setting Gnome Dark theme
@@ -56,22 +56,22 @@
           "org/gnome/shell/extensions/dash-to-dock" = {
             application-counter-overrides-notifications = true;
             background-color = "rgb(36,36,36)";
-            background-opacity = gvariant.mkDouble 0.80000000000000004;
+            background-opacity = lib.gvariant.mkDouble 0.80000000000000004;
             click-action = "minimize";
             custom-background-color = true;
             custom-theme-shrink = false;
-            dash-max-icon-size = gvariant.mkInt16 46;
+            dash-max-icon-size = lib.gvariant.mkInt16 46;
             dock-position = "BOTTOM";
             extend-height=false;
-            height-fraction = gvariant.mkDouble 0.90000000000000002;
+            height-fraction = lib.gvariant.mkDouble 0.90000000000000002;
             hide-tooltip = false;
             icon-size-fixed = false;
             intellihide-mode = "FOCUS_APPLICATION_WINDOWS";
             middle-click-action = "launch";
             multi-monitor = true;
-            preferred-monitor = gvariant.mkInt16 2;
+            preferred-monitor = lib.gvariant.mkInt16 2;
             preferred-monitor-by-connector = "HDMI-1";
-            preview-size-scale = gvariant.mkDouble 0.0;
+            preview-size-scale = lib.gvariant.mkDouble 0.0;
             scroll-action = "cycle-windows";
             scroll-to-focused-application = true;
             shift-click-action = "minimize";
@@ -87,15 +87,15 @@
           "org/gnome/shell/extensions/search-light" = {
             background-color = "rgb(36,36,36)";
             blur-background = false;
-            blur-brightness = gvariant.mkDouble 0.59999999999999998;
-            blur-sigma = gvariant.mkDouble 30.0;
-            border-radius = gvariant.mkDouble 2.40625;
+            blur-brightness = lib.gvariant.mkDouble 0.59999999999999998;
+            blur-sigma = lib.gvariant.mkDouble 30.0;
+            border-radius = lib.gvariant.mkDouble 2.40625;
             currency-converter = true;
-            entry-font-size = gvariant.mkInt16 0;
-            monitor-count = gvariant.mkInt16 2;
-            preferred-monitor = gvariant.mkInt16 0;
-            scale-height = gvariant.mkDouble 0.10000000000000001;
-            scale-width = gvariant.mkDouble 0.10000000000000001;
+            entry-font-size = lib.gvariant.mkInt16 0;
+            monitor-count = lib.gvariant.mkInt16 2;
+            preferred-monitor = lib.gvariant.mkInt16 0;
+            scale-height = lib.gvariant.mkDouble 0.10000000000000001;
+            scale-width = lib.gvariant.mkDouble 0.10000000000000001;
             shortcut-search = ["<Alt>space"];
             show-panel-icon = false;
             text-color = "rgb(243, 243, 243)";
@@ -104,12 +104,12 @@
 
           "org/gnome/shell/extensions/vitals" = {
             hot-sensors=["_system_load_1m_" "_processor_usage_" "_memory_usage_" "_temperature_amdgpu_edge_"];
-            position-in-panel = gvariant.mkInt16 0;
+            position-in-panel = lib.gvariant.mkInt16 0;
             show-fan = false;
             show-gpu = false;
             show-system = false;
             show-voltage = false;
-            update-time = gvariant.mkInt16 1;
+            update-time = lib.gvariant.mkInt16 1;
           };
 
           # Keybindings
@@ -120,9 +120,9 @@
           };
 
           "org/gnome/settings-daemon/plugins/media-keys" = {
-            activate-window-menu = gvariant.mkEmptyArray "s";
-            screenreader = gvariant.mkEmptyArray "s";
-            magnifier = gvariant.mkEmptyArray "s";
+            activate-window-menu = lib.gvariant.mkEmptyArray "s";
+            screenreader = lib.gvariant.mkEmptyArray "s";
+            magnifier = lib.gvariant.mkEmptyArray "s";
             calculator = [ "<Super>c" ];
           };
 
