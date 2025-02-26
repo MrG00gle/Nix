@@ -31,6 +31,6 @@
       test = "sudo nixos-rebuild test |& nom";
       pingtest = "ping 8.8.8.8";
     };
-  }
+  };
 
 }
