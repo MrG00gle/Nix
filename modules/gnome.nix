@@ -91,7 +91,7 @@
         };
 
         "/org/gnome/shell/extensions/search-light" = {
-          background-color = (0.14117647707462311, 0.14117647707462311, 0.14117647707462311, 1.0);
+          background-color = [0.14117647707462311 0.14117647707462311 0.14117647707462311 1.0];
           blur-background = false;
           blur-brightness = 0.59999999999999998;
           blur-sigma = 30.0;
@@ -104,7 +104,7 @@
           scale-width = 0.10000000000000001;
           shortcut-search = ["<Alt>space"];
           show-panel-icon = false;
-          text-color = (1.0, 1.0, 1.0, 1.0);
+          text-color = [1.0 1.0 1.0 1.0];
           unit-converter = true;
         };
 
