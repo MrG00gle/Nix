@@ -75,13 +75,13 @@
     nix-output-monitor
 
     # GNOME extentions
-    # gnomeExtensions.appindicator
-    # gnomeExtensions.bluetooth-battery-meter
-    # gnomeExtensions.dash-to-dock
-    # gnomeExtensions.auto-move-windows
-    # gnomeExtensions.clipboard-indicator
-    # gnomeExtensions.vitals
-    # gnomeExtensions.search-light
+    gnomeExtensions.appindicator
+    gnomeExtensions.bluetooth-battery-meter
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.auto-move-windows
+    gnomeExtensions.clipboard-indicator
+    gnomeExtensions.vitals
+    gnomeExtensions.search-light
 
     # Other
     papirus-icon-theme
