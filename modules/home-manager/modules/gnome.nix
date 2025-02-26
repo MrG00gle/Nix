@@ -6,8 +6,8 @@
     iconTheme = with pkgs; {
       package = papirus-icon-theme;
       name = "Papirus";
-    }
-  }
+    };
+  };
 
   home-manager.users.mrgoogle = {
     dconf = {
