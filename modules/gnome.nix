@@ -91,7 +91,7 @@
         };
 
         "org/gnome/shell/extensions/search-light" = {
-          background-color = "rgb(36,36,36)" #gvariant.mkDouble [0.14117647707462311 0.14117647707462311 0.14117647707462311 1.0];
+          background-color = "rgb(36,36,36)"; #gvariant.mkDouble [0.14117647707462311 0.14117647707462311 0.14117647707462311 1.0];
           blur-background = false;
           blur-brightness = gvariant.mkDouble 0.59999999999999998;
           blur-sigma = gvariant.mkDouble 30.0;
