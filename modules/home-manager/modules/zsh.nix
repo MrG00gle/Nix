@@ -8,6 +8,7 @@
 
     shellAliases = {
       ll = "ls -l";
+      cl = "clear";
       update = "sudo nixos-rebuild switch";
       upgrade = "sudo nixos-rebuild switch --upgrade";
       test = "sudo nixos-rebuild test |& nom";
@@ -20,5 +21,16 @@
       theme = "powerlevel10k/powerlevel10k";
     };
 };
+
+  programs.fish = {
+    shellAliases = {
+      ll = "ls -l";
+      cl = "clear";
+      update = "sudo nixos-rebuild switch";
+      upgrade = "sudo nixos-rebuild switch --upgrade";
+      test = "sudo nixos-rebuild test |& nom";
+      pingtest = "ping 8.8.8.8";
+    };
+  }
 
 }
