@@ -1,13 +1,14 @@
 { pkgs, lib, ... }: {
 
   # Setting up icon theme
-  gtk = {
-    # enable = true;
-    iconTheme = with pkgs; {
-      package = papirus-icon-theme;
-      name = "Papirus";
-    };
-  };
+  # gtk = {
+  #   # enable = true;
+  #   iconTheme = with pkgs; {
+  #     package = papirus-icon-theme;
+  #     name = "Papirus";
+  #   };
+  # };
+  gtk.iconTheme = pkgs.papirus-icon-theme;
 
   home-manager.users.mrgoogle = {
     dconf = {
@@ -22,6 +23,7 @@
 
           "org/gnome/desktop/interface" = {
             color-scheme = "prefer-dark";                                       # Setting Gnome Dark theme
+            # icon-theme = ;
             show-battery-percentage = true;                                     # Show battery precentage
           };
 
