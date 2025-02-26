@@ -90,7 +90,7 @@
           transparency-mode = "FIXED";
         };
 
-        /org/gnome/shell/extensions/search-light = {
+        "/org/gnome/shell/extensions/search-light" = {
           background-color = (0.14117647707462311, 0.14117647707462311, 0.14117647707462311, 1.0);
           blur-background = false;
           blur-brightness = 0.59999999999999998;
