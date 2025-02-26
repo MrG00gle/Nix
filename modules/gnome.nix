@@ -27,7 +27,7 @@
         "org/gnome/desktop/media-handling".automount = false;                 # Turning off the automout on incert
         "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";         # Turning off mouse acceleration
         "org/gnome/desktop/peripherals/touchpad".two-finger-scrolling-enabled = true;
-        "org/gnome/desktop/session".idle-delay = mkUint32 0;                  # Time till idle
+        "org/gnome/desktop/session".idle-delay = gvariant.mkUint32 0;                  # Time till idle
         "org/gnome/desktop/privacy".remember-recent-files = true;             # Show reccent files
         "org/gnome/desktop/privacy".report-technical-problems = false;        # Telemetry
 
@@ -62,22 +62,22 @@
         "/org/gnome/shell/extensions/dash-to-dock" = {
           application-counter-overrides-notifications=true;
           background-color = "rgb(36,36,36)";
-          background-opacity = mkDouble 0.80000000000000004;
+          background-opacity = gvariant.mkDouble 0.80000000000000004;
           click-action = "minimize";
           custom-background-color = true;
           custom-theme-shrink = false;
-          dash-max-icon-size = mkInt16 46;
+          dash-max-icon-size = gvariant.mkInt16 46;
           dock-position = "BOTTOM";
           extend-height=false;
-          height-fraction = mkDouble 0.90000000000000002;
+          height-fraction = gvariant.mkDouble 0.90000000000000002;
           hide-tooltip = false;
           icon-size-fixed = false;
           intellihide-mode = "FOCUS_APPLICATION_WINDOWS";
           middle-click-action = "launch";
           multi-monitor = true;
-          preferred-monitor = mkInt16 2;
+          preferred-monitor = gvariant.mkInt16 2;
           preferred-monitor-by-connector = "HDMI-1";
-          preview-size-scale = mkDouble 0.0;
+          preview-size-scale = gvariant.mkDouble 0.0;
           scroll-action = "cycle-windows";
           scroll-to-focused-application = true;
           shift-click-action = "minimize";
@@ -91,20 +91,20 @@
         };
 
         "/org/gnome/shell/extensions/search-light" = {
-          background-color = mkDouble [0.14117647707462311 0.14117647707462311 0.14117647707462311 1.0];
+          background-color = gvariant.mkDouble [0.14117647707462311 0.14117647707462311 0.14117647707462311 1.0];
           blur-background = false;
-          blur-brightness = mkDouble 0.59999999999999998;
-          blur-sigma = mkDouble 30.0;
-          border-radius = mkDouble 2.40625;
+          blur-brightness = gvariant.mkDouble 0.59999999999999998;
+          blur-sigma = gvariant.mkDouble 30.0;
+          border-radius = gvariant.mkDouble 2.40625;
           currency-converter = true;
-          entry-font-size = mkInt16 0;
-          monitor-count = mkInt16 2;
-          preferred-monitor = mkInt16 0;
-          scale-height = mkDouble 0.10000000000000001;
-          scale-width = mkDouble 0.10000000000000001;
+          entry-font-size = gvariant.mkInt16 0;
+          monitor-count = gvariant.mkInt16 2;
+          preferred-monitor = gvariant.mkInt16 0;
+          scale-height = gvariant.mkDouble 0.10000000000000001;
+          scale-width = gvariant.mkDouble 0.10000000000000001;
           shortcut-search = ["<Alt>space"];
           show-panel-icon = false;
-          text-color = mkDouble [1.0 1.0 1.0 1.0];
+          text-color = gvariant.mkDouble [1.0 1.0 1.0 1.0];
           unit-converter = true;
         };
 
