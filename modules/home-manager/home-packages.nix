@@ -67,5 +67,8 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.vitals
     gnomeExtensions.search-light
+
+    # Other
+    papirus-icon-theme
   ];
 }
