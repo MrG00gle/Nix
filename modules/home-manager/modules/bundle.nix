@@ -2,7 +2,7 @@
   imports = [
     #./git.nix
     ./extentions.nix
-    ./zsh.nix
+    ./shell.nix
     ./steam.nix
   ];
 }

@@ -10,8 +10,9 @@
       ll = "ls -l";
       cl = "clear";
       update = "sudo nixos-rebuild switch";
-      upgrade = "sudo nixos-rebuild switch --upgrade";
+      upgrade = "sudo nixos-rebuild switch --upgrade |& nom";
       test = "sudo nixos-rebuild test |& nom";
+      test-trace = "sudo nixos-rebuild test --show-trace";
       pingtest = "ping 8.8.8.8";
     };
 
@@ -27,8 +28,9 @@
       ll = "ls -l";
       cl = "clear";
       update = "sudo nixos-rebuild switch";
-      upgrade = "sudo nixos-rebuild switch --upgrade";
+      upgrade = "sudo nixos-rebuild switch --upgrade |& nom";
       test = "sudo nixos-rebuild test |& nom";
+      test-trace = "sudo nixos-rebuild test --show-trace";
       pingtest = "ping 8.8.8.8";
     };
   };
