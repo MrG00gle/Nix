@@ -28,16 +28,18 @@
         "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";         # Turning off mouse acceleration
         "org/gnome/desktop/peripherals/touchpad".two-finger-scrolling-enabled = true;
         "org/gnome/desktop/session".idle-delay = mkUint32 0;                  # Time till idle
+        "org/gnome/desktop/privacy".remember-recent-files = true;             # Show reccent files
+        "org/gnome/desktop/privacy".remember-recent-files = true;             # Telemetry
 
         "org/gnome/desktop/interface" = {
           color-scheme = "prefer-dark";                                       # Setting Gnome Dark theme
           show-battery-percentage = true;                                     # Show battery precentage
         }
 
-        "org/gnome/desktop/privacy" = {
-          remember-recent-files = true;                                       # Show reccent files
-          report-technical-problems = false;                                   # Telemetry
-        }
+        # "org/gnome/desktop/privacy" = {
+        #   remember-recent-files = true;                                       # Show reccent files
+        #   report-technical-problems = false;                                  # Telemetry
+        # }
 
         "org/gnome/desktop/screensaver" = {
           lock-enabled = true;                                                # TODO: dont know what its doing so turn on for now
