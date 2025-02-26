@@ -59,7 +59,7 @@
         };
 
         # Extensions
-        "/org/gnome/shell/extensions/dash-to-dock" = {
+        "org/gnome/shell/extensions/dash-to-dock" = {
           application-counter-overrides-notifications = true;
           background-color = "rgb(36,36,36)";
           background-opacity = gvariant.mkDouble 0.80000000000000004;
@@ -90,7 +90,7 @@
           transparency-mode = "FIXED";
         };
 
-        "/org/gnome/shell/extensions/search-light" = {
+        "org/gnome/shell/extensions/search-light" = {
           background-color = gvariant.mkDouble [0.14117647707462311 0.14117647707462311 0.14117647707462311 1.0];
           blur-background = false;
           blur-brightness = gvariant.mkDouble 0.59999999999999998;
