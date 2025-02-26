@@ -116,8 +116,8 @@
         };
 
         "org/gnome/settings-daemon/plugins/media-keys" = {
-          screenreader = mkEmptyArray type.string;
-          magnifier = mkEmptyArray type.string;
+          screenreader = gvariant.mkEmptyArray type.string;
+          magnifier = gvariant.mkEmptyArray type.string;
           calculator = [ "<Super>c" ];
         };
 
