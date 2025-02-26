@@ -75,7 +75,7 @@
           intellihide-mode = "FOCUS_APPLICATION_WINDOWS";
           middle-click-action = "launch";
           multi-monitor = true;
-          preferred-monitor = -2;
+          preferred-monitor = gvariant.mkInt32 -2;
           preferred-monitor-by-connector = "HDMI-1";
           preview-size-scale = 0.0;
           scroll-action = "cycle-windows";
