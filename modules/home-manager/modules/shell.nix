@@ -9,9 +9,10 @@
     shellAliases = {
       ll = "ls -l";
       cl = "clear";
-      update = "sudo nixos-rebuild switch";
+      update = "sudo nixos-rebuild switch |& nom";
       upgrade = "sudo nixos-rebuild switch --upgrade |& nom";
       test = "sudo nixos-rebuild test |& nom";
+      test-upgrade = "sudo nixos-rebuild test --upgrade |& nom";;
       test-trace = "sudo nixos-rebuild test --show-trace";
       pingtest = "ping 8.8.8.8";
     };
@@ -24,12 +25,14 @@
 };
 
   programs.fish = {
+    histSize = 10000;
     shellAliases = {
       ll = "ls -l";
       cl = "clear";
-      update = "sudo nixos-rebuild switch";
-      upgrade = "sudo nixos-rebuild switch --upgrade |& nom";
-      test = "sudo nixos-rebuild test |& nom";
+      update = "sudo nixos-rebuild switch &| nom";
+      upgrade = "sudo nixos-rebuild switch --upgrade &| nom";
+      test = "sudo nixos-rebuild test &| nom";
+      test-upgrade = "sudo nixos-rebuild test --upgrade &| nom";;
       test-trace = "sudo nixos-rebuild test --show-trace";
       pingtest = "ping 8.8.8.8";
     };
