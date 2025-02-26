@@ -25,6 +25,7 @@
 };
 
   programs.fish = {
+    enable = true;
     histSize = 10000;
     shellAliases = {
       ll = "ls -l";
