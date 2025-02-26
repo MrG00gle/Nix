@@ -161,7 +161,7 @@
 
           "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
             binding = "<Control><Alt>t";
-            command = "/usr/bin/env ptyxis";
+            command = "ptyxis";
             name = "Terminal";
           };
 
