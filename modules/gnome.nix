@@ -104,7 +104,7 @@
           scale-width = gvariant.mkDouble 0.10000000000000001;
           shortcut-search = ["<Alt>space"];
           show-panel-icon = false;
-          text-color = gvariant.mkDouble [1.0 1.0 1.0 1.0];
+          text-color = "rgb(243, 243, 243)"; #gvariant.mkDouble [1.0 1.0 1.0 1.0];
           unit-converter = true;
         };
 
