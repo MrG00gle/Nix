@@ -66,7 +66,7 @@
           click-action = "minimize";
           custom-background-color = true;
           custom-theme-shrink = false;
-          dash-max-icon-size = 46;
+          dash-max-icon-size = mkUint32 46;
           dock-position = "BOTTOM";
           extend-height=false;
           height-fraction = 0.90000000000000002;
