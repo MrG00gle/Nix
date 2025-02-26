@@ -62,22 +62,22 @@
         "/org/gnome/shell/extensions/dash-to-dock" = {
           application-counter-overrides-notifications=true;
           background-color = "rgb(36,36,36)";
-          background-opacity = 0.80000000000000004;
+          background-opacity = mkDouble 0.80000000000000004;
           click-action = "minimize";
           custom-background-color = true;
           custom-theme-shrink = false;
-          dash-max-icon-size = gvariant.mkInt32 46;
+          dash-max-icon-size = mkInt16 46;
           dock-position = "BOTTOM";
           extend-height=false;
-          height-fraction = 0.90000000000000002;
+          height-fraction = mkDouble 0.90000000000000002;
           hide-tooltip = false;
           icon-size-fixed = false;
           intellihide-mode = "FOCUS_APPLICATION_WINDOWS";
           middle-click-action = "launch";
           multi-monitor = true;
-          preferred-monitor = gvariant.mkInt32 2;
+          preferred-monitor = mkInt16 2;
           preferred-monitor-by-connector = "HDMI-1";
-          preview-size-scale = 0.0;
+          preview-size-scale = mkDouble 0.0;
           scroll-action = "cycle-windows";
           scroll-to-focused-application = true;
           shift-click-action = "minimize";
@@ -91,20 +91,20 @@
         };
 
         "/org/gnome/shell/extensions/search-light" = {
-          background-color = [0.14117647707462311 0.14117647707462311 0.14117647707462311 1.0];
+          background-color = mkDouble [0.14117647707462311 0.14117647707462311 0.14117647707462311 1.0];
           blur-background = false;
-          blur-brightness = 0.59999999999999998;
-          blur-sigma = 30.0;
-          border-radius = 2.40625;
+          blur-brightness = mkDouble 0.59999999999999998;
+          blur-sigma = mkDouble 30.0;
+          border-radius = mkDouble 2.40625;
           currency-converter = true;
-          entry-font-size = 0;
-          monitor-count = 2;
-          preferred-monitor = 0;
-          scale-height = 0.10000000000000001;
-          scale-width = 0.10000000000000001;
+          entry-font-size = mkInt16 0;
+          monitor-count = mkInt16 2;
+          preferred-monitor = mkInt16 0;
+          scale-height = mkDouble 0.10000000000000001;
+          scale-width = mkDouble 0.10000000000000001;
           shortcut-search = ["<Alt>space"];
           show-panel-icon = false;
-          text-color = [1.0 1.0 1.0 1.0];
+          text-color = mkDouble [1.0 1.0 1.0 1.0];
           unit-converter = true;
         };
 
