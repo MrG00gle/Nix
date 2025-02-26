@@ -59,7 +59,7 @@
         };
 
         # Extensions
-        "/org/gnome/shell/extensions/dash-to-dock/" = {
+        "/org/gnome/shell/extensions/dash-to-dock" = {
           application-counter-overrides-notifications = true;
           background-color = "rgb(36,36,36)";
           background-opacity = gvariant.mkDouble 0.80000000000000004;
