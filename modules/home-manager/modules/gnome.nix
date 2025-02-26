@@ -5,11 +5,11 @@
       enable = true;
       settings = {
 
-        # Input langs
-        "org/gnome/desktop/input-sources".sources = with lib.gvariant; [
-          (mkTuple [ "xkb" "pl" ])
-          (mkTuple [ "xkb" "ru" ])
-        ];
+        # # Input langs
+        # "org/gnome/desktop/input-sources".sources = with lib.gvariant; [
+        #   (mkTuple [ "xkb" "pl" ])
+        #   (mkTuple [ "xkb" "ru" ])
+        # ];
 
         # Desktop settings
           "org/gnome/desktop/media-handling".automount = false;                 # Turning off the automout on incert
@@ -103,7 +103,7 @@
             preferred-monitor = lib.gvariant.mkInt16 0;
             scale-height = lib.gvariant.mkDouble 0.10000000000000001;
             scale-width = lib.gvariant.mkDouble 0.10000000000000001;
-            shortcut-search = ["<Alt>space"];
+            shortcut-search = ["<Alt><Space>"];
             show-panel-icon = false;
             text-color = "rgb(243, 243, 243)";
             unit-converter = true;

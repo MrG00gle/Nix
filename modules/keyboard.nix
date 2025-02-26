@@ -15,9 +15,9 @@
   #   LC_TIME="en_US.UTF-8";
   # };
 
-  # services.xserver.xkb = {
-  #   layout = "pl,ru";
-  #   variant = "";
-  #   options = "grp:win_space_toggle";
-  # };
+  services.xserver.xkb = {
+    layout = ["pl" "ru"];
+    variant = "";
+    options = "grp:win_space_toggle";
+  };
 }
