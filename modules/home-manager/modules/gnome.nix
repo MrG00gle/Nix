@@ -2,7 +2,7 @@
 
   # Setting up icon theme
   gtk = {
-    enable = true;
+    # enable = true;
     iconTheme = with pkgs; {
       package = papirus-icon-theme;
       name = "Papirus";
