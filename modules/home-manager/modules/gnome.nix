@@ -5,6 +5,12 @@
       enable = true;
       settings = {
 
+        # Input langs
+        "org/gnome/desktop/input-sources".sources = [
+          (mkTuple [ "xkb" "pl" ])
+          (mkTuple [ "xkb" "ru" ])
+        ];
+
         # Desktop settings
           "org/gnome/desktop/media-handling".automount = false;                 # Turning off the automout on incert
           "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";         # Turning off mouse acceleration
