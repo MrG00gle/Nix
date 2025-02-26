@@ -9,6 +9,7 @@
     gnome-music
     gnome-photos
     gnome-maps
+    gnome-console
     geary # mail client
     epiphany # gnome browser
     gnome-tour
@@ -38,6 +39,7 @@
     wireshark
     qbittorrent
     gnome-extension-manager
+    ptyxis
     
     # Gaming stuff
     bottles
