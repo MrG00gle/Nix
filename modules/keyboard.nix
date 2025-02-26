@@ -16,8 +16,11 @@
   # };
 
   services.xserver.xkb = {
-    layout = ["pl" "ru"];
+    layout = "pl,ru";
     variant = "";
     options = "grp:win_space_toggle";
   };
+
+  console.keyMap = "us";
+
 }
