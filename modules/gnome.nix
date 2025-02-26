@@ -116,6 +116,7 @@
         };
 
         "org/gnome/settings-daemon/plugins/media-keys" = {
+          activate-window-menu = gvariant.mkEmptyArray "s";
           screenreader = gvariant.mkEmptyArray "s";
           magnifier = gvariant.mkEmptyArray "s";
           calculator = [ "<Super>c" ];
