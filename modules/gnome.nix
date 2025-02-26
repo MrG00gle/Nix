@@ -132,8 +132,7 @@
         #   attach-modal-dialogs = true;
         #   experimental-features = [ "scale-monitor-framebuffer" ];
         # };
-      }
-    }]
-  }
-
-}
+      };
+    }];
+  };
+};
