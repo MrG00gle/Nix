@@ -50,7 +50,7 @@
               vitals.extensionUuid
               search-light.extensionUuid
             ];
-          }
+          };
 
           # Extension configurations
           "org/gnome/shell/extensions/dash-to-dock" = {
@@ -110,7 +110,7 @@
             show-system = false;
             show-voltage = false;
             update-time = gvariant.mkInt16 1;
-          }
+          };
 
           # Keybindings
           "org/gnome/desktop/wm/keybindings" = {
