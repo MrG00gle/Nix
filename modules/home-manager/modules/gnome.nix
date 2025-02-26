@@ -128,7 +128,7 @@
           "org/gnome/desktop/wm/keybindings" = {
             switch-to-workspace-left = ["<Super>Left"];
             switch-to-workspace-right= ["<Super>Right"];
-            switch-input-source = ["<Super><Space>"];                         # TODO: Test the setting <Space> or <SpaceBar>
+            switch-input-source = ["<Super>space"];                         # TODO: Test the setting <Space> or <SpaceBar>
           };
 
           "org/gnome/settings-daemon/plugins/media-keys" = {
