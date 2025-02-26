@@ -1,7 +1,7 @@
 {
   imports = [
     #./git.nix
-    ./extentions.nix
+    ./gnome.nix
     ./shell.nix
     ./steam.nix
   ];
