@@ -2,7 +2,7 @@
   nixpkgs.config = {
     allowUnfree = true;
   };
-  
+
   home-manager.users.mrgoogle.home.packages = with pkgs; [
   
     # Desktop apps

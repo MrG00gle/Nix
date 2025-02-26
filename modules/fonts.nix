@@ -1,3 +1,8 @@
-{ pkgs, ... }: {
-  fonts.packages = with pkgs; [ nerdfonts ];
+{pkgs, ...}: {
+
+  # Installing selected fonts
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
+  ];
+
 }
