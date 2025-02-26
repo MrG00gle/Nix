@@ -6,7 +6,7 @@
       settings = {
 
         # Input langs
-        "org/gnome/desktop/input-sources".sources with lib.gvariant; = [
+        "org/gnome/desktop/input-sources".sources = with lib.gvariant; [
           (mkTuple [ "xkb" "pl" ])
           (mkTuple [ "xkb" "ru" ])
         ];
