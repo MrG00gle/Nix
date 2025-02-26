@@ -16,6 +16,15 @@
           "org/gnome/desktop/peripherals/touchpad".two-finger-scrolling-enabled = true;
           "org/gnome/desktop/session".idle-delay = lib.gvariant.mkUint32 0;         # Time till idle
 
+        "org/gnome/mutter" = {
+          edge-tiling = true;
+          attach-modal-dialogs = true;
+          experimental-features = [ "scale-monitor-framebuffer" ];
+          center-new-windows = true;
+          dynamic-workspaces = false;
+          workspaces-only-on-primary = false;
+        };
+
           "org/gnome/desktop/interface" = {
             accent-color = "purple";
             color-scheme = "prefer-dark";                                       # Setting Gnome Dark theme
@@ -150,15 +159,15 @@
             name = "File-Manager";
           };
 
-          # "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-          #   binding = "<Control><Alt>t";
-          #   command = "/usr/bin/env gnome-console";
-          #   name = "Terminal";
-          # };
+          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+            binding = "<Control><Alt>t";
+            command = "/usr/bin/env ptyxis";
+            name = "Terminal";
+          };
 
           "org/gnome/settings-daemon/plugins/media-keys".custom-keybindings = [
             "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
-            # "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+            "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
           ];
 
       };
