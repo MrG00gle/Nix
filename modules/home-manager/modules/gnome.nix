@@ -1,15 +1,5 @@
 { pkgs, lib, ... }: {
 
-  # Setting up icon theme
-  # gtk = {
-  #   # enable = true;
-  #   iconTheme = with pkgs; {
-  #     package = papirus-icon-theme;
-  #     name = "Papirus";
-  #   };
-  # };
-  # gtk.iconTheme = pkgs.papirus-icon-theme;
-
   home-manager.users.mrgoogle = {
     dconf = {
       enable = true;
