@@ -108,7 +108,7 @@
             preferred-monitor = lib.gvariant.mkInt16 0;
             scale-height = lib.gvariant.mkDouble 0.10000000000000001;
             scale-width = lib.gvariant.mkDouble 0.10000000000000001;
-            shortcut-search = ["<Alt><Space>"];
+            shortcut-search = ["<Alt>space"];
             show-panel-icon = false;
             text-color = "rgb(243, 243, 243)";
             unit-converter = true;
@@ -126,6 +126,9 @@
 
           # Keybindings
           "org/gnome/desktop/wm/keybindings" = {
+            activate-window-menu = lib.gvariant.mkEmptyArray "s"; 
+            view-split-on-left = lib.gvariant.mkEmptyArray "s";
+            view-split-on-right = lib.gvariant.mkEmptyArray "s";
             switch-to-workspace-left = ["<Super>Left"];
             switch-to-workspace-right= ["<Super>Right"];
             switch-input-source = ["<Super>space"];                         # TODO: Test the setting <Space> or <SpaceBar>
