@@ -29,7 +29,7 @@
         "org/gnome/desktop/peripherals/touchpad".two-finger-scrolling-enabled = true;
         "org/gnome/desktop/session".idle-delay = mkUint32 0;                  # Time till idle
         "org/gnome/desktop/privacy".remember-recent-files = true;             # Show reccent files
-        "org/gnome/desktop/privacy".remember-recent-files = true;             # Telemetry
+        "org/gnome/desktop/privacy".report-technical-problems = false;        # Telemetry
 
         "org/gnome/desktop/interface" = {
           color-scheme = "prefer-dark";                                       # Setting Gnome Dark theme
