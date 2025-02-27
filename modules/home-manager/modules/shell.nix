@@ -18,7 +18,7 @@
       pingtest = "ping 8.8.8.8";
     };
 
-    oh-my-zsh = {
+    ohMyZsh = {
       enable = true;
       plugins = [ "git" "history" "zsh-autosuggestions" "zsh-syntax-highlighting" "docker" "sudo"];
       theme = "powerlevel10k/powerlevel10k";
