@@ -14,7 +14,7 @@
           "org/gnome/desktop/media-handling".automount = false;                 # Turning off the automout on incert
           "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";         # Turning off mouse acceleration
           "org/gnome/desktop/peripherals/touchpad".two-finger-scrolling-enabled = true;
-          "org/gnome/desktop/session".idle-delay = lib.gvariant.mkUint32 0;         # Time till idle
+          "org/gnome/desktop/session".idle-delay = lib.gvariant.mkUint32 0;     # Time till idle
 
         "org/gnome/mutter" = {
           edge-tiling = true;
@@ -143,32 +143,28 @@
             view-split-on-right = lib.gvariant.mkEmptyArray "s";
             switch-to-workspace-left = ["<Super>Left"];
             switch-to-workspace-right= ["<Super>Right"];
-            switch-input-source = ["<Super>space"];                         # TODO: Test the setting <Space> or <SpaceBar>
+            switch-input-source = ["<Super>space"];
+          };
+
+          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+            binding = "<Control><Alt>t";
+            command = "/usr/bin/env ptyxis";
+            name = "Terminal";
           };
 
           "org/gnome/settings-daemon/plugins/media-keys" = {
             activate-window-menu = lib.gvariant.mkEmptyArray "s";
             screenreader = lib.gvariant.mkEmptyArray "s";
             magnifier = lib.gvariant.mkEmptyArray "s";
-            calculator = [ "<Super>c" ];
+            help = lib.gvariant.mkEmptyArray "s";
+            home = ["<Super>e"];
+            calculator = ["<Super>c"];
+            control-center = ["<Super>s"];
+            www = ["<Super>F1"];
+            custom-keybindings = [
+              "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+            ];
           };
-
-          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-            binding = "<Super>e";
-            command = "/usr/bin/env nautilus";
-            name = "File-Manager";
-          };
-
-          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-            binding = "<Control><Alt>t";
-            command = "ptyxis";
-            name = "Terminal";
-          };
-
-          "org/gnome/settings-daemon/plugins/media-keys".custom-keybindings = [
-            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
-            "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
-          ];
 
       };
     };
