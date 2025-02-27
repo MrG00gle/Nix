@@ -1,6 +1,6 @@
 { config, ... }: {
 
-  programs.gnome-terminal.enable = true;
+  system.userActivationScripts.zshrc = "touch .zshrc";
 
   programs.zsh = {
     enable = true;
@@ -8,6 +8,7 @@
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
     histSize = 10000;
+    history.ignoreAllDups = true;
 
     shellAliases = {
       ll = "ls -l";
@@ -20,7 +21,7 @@
       pingtest = "ping 8.8.8.8";
     };
 
-    ohMyZsh = {
+    oh-my-zsh = {
       enable = true;
       plugins = [ "git" "history" "zsh-autosuggestions" "zsh-syntax-highlighting" "docker" "sudo"];
       theme = "powerlevel10k/powerlevel10k";

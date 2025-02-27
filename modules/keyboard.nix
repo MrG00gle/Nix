@@ -14,13 +14,4 @@
   #   LC_TELEPHONE="en_US.UTF-8";
   #   LC_TIME="en_US.UTF-8";
   # };
-
-  # services.xserver.xkb = {
-  #   layout = "pl,ru";
-  #   variant = "";
-  #   options = "grp:win_space_toggle";
-  # };
-
-  # console.keyMap = "us";
-
 }
