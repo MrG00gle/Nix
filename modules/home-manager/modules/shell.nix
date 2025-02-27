@@ -8,7 +8,6 @@
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
     histSize = 10000;
-    history.ignoreAllDups = true;
 
     shellAliases = {
       ll = "ls -l";
