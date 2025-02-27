@@ -39,7 +39,7 @@
     wireshark
     qbittorrent
     gnome-extension-manager
-    ptyxis
+    # ptyxis
     gnome-terminal
     
     # Gaming stuff
