@@ -19,7 +19,7 @@
         "org/gnome/mutter" = {
           edge-tiling = true;
           attach-modal-dialogs = true;
-          experimental-features = [ "scale-monitor-framebuffer" ];
+          experimental-features = ["scale-monitor-framebuffer"];
           center-new-windows = true;
           dynamic-workspaces = false;
           workspaces-only-on-primary = false;
