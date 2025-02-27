@@ -148,7 +148,7 @@
 
           "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
             binding = "<Control><Alt>t";
-            command = "/usr/bin/env ptyxis";
+            command = "/usr/bin/env gnome-terminal";
             name = "Terminal";
           };
 
@@ -162,7 +162,7 @@
             control-center = ["<Super>s"];
             www = ["<Super>F1"];
             custom-keybindings = [
-              # "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+              "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
             ];
           };
 
