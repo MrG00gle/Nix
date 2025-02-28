@@ -6,7 +6,10 @@ in
   imports = [
     (import "${home-manager}/nixos")
     ./home-packages.nix
-    ./modules/bundle.nix
+    ./apps/git.nix
+    ./apps/gnome.nix
+    ./apps/shell.nix
+    ./apps/steam.nix
   ];
   home-manager.users.mrgoogle = {
     /* The home.stateVersion option does not have a default and must be set */

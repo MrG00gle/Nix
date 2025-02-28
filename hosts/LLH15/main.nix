@@ -1,8 +1,11 @@
-{ inputs, config, pkgs, ...}: {
+{ inputs, config, pkgs, ...}: 
+let
+  modulePaths = lib.attrNames (import ./system);
+in
+{
   imports = [
     ./hardware-configuration.nix
-    ./modules/bundle.nix
-  ];
+  ] ++ (lib.mapAttrsToList (name: path: import path) modulePaths);
   
     # Bootloader.
   boot.loader.systemd-boot.enable = true;
