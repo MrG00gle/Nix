@@ -3,9 +3,9 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    autosuggestions.enable = true;
+    # autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
-    histSize = 10000;
+    # histSize = 10000;
 
     shellAliases = {
       ll = "ls -l";
