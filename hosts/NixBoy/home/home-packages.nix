@@ -3,7 +3,7 @@
     allowUnfree = true;
   };
 
-  home-manager.users.mrgoogle.home.packages = with pkgs; [
+  users.mrgoogle.home.packages = with pkgs; [
   
     # Desktop apps
     firefox
