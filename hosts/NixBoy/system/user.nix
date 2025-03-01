@@ -1,8 +1,9 @@
-{ pkgs, ... }: {
-  # programs.zsh.enable = true;
+{ pkgs, lib, ... }: {
+
+  programs.fish.enable = lib.mkOptionDefault true; # Setting default Shell to fish (But with lowest priority 1500)
 
   users = {
-    defaultUserShell = pkgs.fish;
+    defaultUserShell = lib.mkOptionDefault pkgs.fish; # Setting default Shell to fish (But with lowest priority 1500)
 
     users.mrgoogle = {
       isNormalUser = true;
