@@ -14,10 +14,11 @@ in
     ./system/sound.nix
     ./system/store.nix
     ./system/user.nix
-  ] #++ (lib.mapAttrsToList (name: path: import path) modulePaths);
+  ]; #++ (lib.mapAttrsToList (name: path: import path) modulePaths);
   
     # Bootloader.
   boot.loader.systemd-boot.enable = true;
+  boot.loader.grub.device = "/dev/vda";
   boot.loader.efi.canTouchEfiVariables = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
