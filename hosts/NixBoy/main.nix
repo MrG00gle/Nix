@@ -12,6 +12,7 @@ in
     ./system/packages.nix
     ./system/services.nix
     ./system/sound.nix
+    ./system/bluetooth.nix
     ./system/store.nix
     ./system/user.nix
   ]; #++ (lib.mapAttrsToList (name: path: import path) modulePaths);
