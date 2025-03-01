@@ -25,7 +25,7 @@
             home-manager.users.mrgoogle = import ./hosts/NixBoy/home/home.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
-          };
+          }
         ];
       };
     };
