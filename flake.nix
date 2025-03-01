@@ -15,12 +15,13 @@
         system = "x86_64-linux";
         modules = [
           ./hosts/NixBoy/main.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.mrgoogle = import ./hosts/NixBoy/home/home.nix;
-          }
+          ./hoosts/NixBoy/home/home.nix
+          # home-manager.nixosModules.home-manager
+          # {
+          #   home-manager.useGlobalPkgs = true;
+          #   home-manager.useUserPackages = true;
+          #   home-manager.users.mrgoogle = import ./hosts/NixBoy/home/home.nix;
+          # }
         ];
       };
     };
