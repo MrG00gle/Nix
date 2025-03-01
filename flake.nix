@@ -14,7 +14,7 @@
       NixBoy = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/NixBoy/main.nix
+          ./hosts/NixBoy/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

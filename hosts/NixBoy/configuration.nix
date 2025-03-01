@@ -22,6 +22,8 @@ in
   boot.loader.grub.device = "/dev/vda";
   boot.loader.efi.canTouchEfiVariables = true;
 
+    nixpkgs.config.allowUnfree = lib.mkForce true;
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
   services.printing.enable = false;  # Printer
