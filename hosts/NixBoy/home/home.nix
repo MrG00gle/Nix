@@ -4,7 +4,7 @@
 # in
 {
   imports = [
-    (import "${home-manager}/nixos")
+    # (import "${home-manager}/nixos")
     ./home-packages.nix
     ./apps/git.nix
     ./apps/wm/gnome.nix
