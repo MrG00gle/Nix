@@ -5,7 +5,16 @@ in
 {
   imports = [
     ./hardware-configuration.nix
-  ] ++ (lib.mapAttrsToList (name: path: import path) modulePaths);
+    ./system/fonts.nix
+    ./system/gpu.nix
+    ./system/locales.nix
+    ./system/network.nix
+    ./system/packages.nix
+    ./system/services.nix
+    ./system/sound.nix
+    ./system/store.nix
+    ./system/user.nix
+  ] #++ (lib.mapAttrsToList (name: path: import path) modulePaths);
   
     # Bootloader.
   boot.loader.systemd-boot.enable = true;
