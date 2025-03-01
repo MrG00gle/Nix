@@ -1,4 +1,4 @@
-{ pkgs, lib, home-manager, ... }: {
+{ pkgs, lib, ... }: {
 
   programs.gnome-terminal.enable = true;
 
