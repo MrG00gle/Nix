@@ -8,7 +8,7 @@
       isNormalUser = true;
       description = "mrGoogle";
       extraGroups = [ "networkmanager" "wheel" "video" "audio" "tty" "docker"];
-      packages = with pkgs; [];
+      packages = with pkgs; []; # Packages are handled by home-manager
     };
   };
 

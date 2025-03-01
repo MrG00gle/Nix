@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-
+  # Excluding unwanted packeges from Gnome WM
   environment.gnome.excludePackages = (with pkgs; [
     atomix # puzzle game
     cheese # webcam tool
@@ -16,6 +16,8 @@
     totem # video player
   ]);
 
-  environment.systemPackages = with pkgs; [];
+  # Enabling Gamemode (Because homemanager do not handles gamemode)
+  programs.gamemode.enable = true;
 
+  environment.systemPackages = with pkgs; [];
 }

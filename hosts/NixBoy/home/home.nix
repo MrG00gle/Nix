@@ -7,9 +7,8 @@
     # (import "${home-manager}/nixos")
     ./home-packages.nix
     ./apps/git.nix
-    ./wm/gnome.nix
     ./apps/shell.nix
-    ./apps/steam.nix
+    ./wm/gnome.nix
   ];
 
   home.username = "mrgoogle";
