@@ -7,7 +7,7 @@
     # (import "${home-manager}/nixos")
     ./home-packages.nix
     ./apps/git.nix
-    ./apps/wm/gnome.nix
+    ./wm/gnome.nix
     ./apps/shell.nix
     ./apps/steam.nix
   ];
