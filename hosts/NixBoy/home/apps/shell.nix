@@ -1,4 +1,4 @@
-{ config, ... }: {
+{ config, lib,... }: {
 
   # programs.zsh = {
   #   enable = true;
@@ -26,7 +26,7 @@
   # };
 
   programs.fish = {
-    enable = true;
+    enable = lib.mkForce true;
     shellAliases = {
       ll = "ls -l";
       cl = "clear";
