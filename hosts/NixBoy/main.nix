@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, lib ...}: 
+{ inputs, config, pkgs, lib, ...}: 
 let
   modulePaths = lib.attrNames (import ./system);
 in
