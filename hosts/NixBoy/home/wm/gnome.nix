@@ -2,7 +2,7 @@
 
   programs.gnome-terminal.enable = true;
 
-  home-manager.users.mrgoogle = {
+  # home-manager.users.mrgoogle = {
     dconf = {
       enable = true;
       settings = {
@@ -170,6 +170,6 @@
 
       };
     };
-  };
+  # };
 
 }
