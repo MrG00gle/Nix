@@ -1,9 +1,9 @@
 { pkgs, lib, ... }: {
 
-  programs.fish.enable = lib.mkDefault true; # Setting default Shell to fish (But with lowe priority 1500)
+  programs.fish.enable = lib.mkForce true; # Setting default Shell to fish (But with lowe priority 1500)
 
   users = {
-    defaultUserShell = lib.mkDefault pkgs.fish; # Setting default Shell to fish (But with lowe priority 1000)
+    defaultUserShell = lib.mkForce pkgs.fish; # Setting default Shell to fish (But with lowe priority 1000)
 
     users.mrgoogle = {
       isNormalUser = true;
