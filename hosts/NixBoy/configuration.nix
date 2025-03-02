@@ -22,7 +22,7 @@
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
 
-    nixpkgs.config.allowUnfree = lib.mkForce true;
+  nixpkgs.config.allowUnfree = lib.mkForce true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
