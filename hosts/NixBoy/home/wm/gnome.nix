@@ -124,7 +124,7 @@
 
           "org/gnome/shell/extensions/vitals" = {
             hot-sensors=["_system_load_1m_" "_processor_usage_" "_memory_usage_" "_temperature_amdgpu_edge_"];
-            position-in-panel = lib.gvariant.mkInt16 1;
+            position-in-panel = lib.gvariant.mkInt16 0;
             show-fan = false;
             show-gpu = false;
             show-system = false;
