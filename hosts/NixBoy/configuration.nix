@@ -1,10 +1,10 @@
 { inputs, config, pkgs, lib, ...}: 
-let
-  modulePaths = lib.attrNames (import ./system);
-in
+# let
+#   modulePaths = lib.attrNames (import ./system);
+# in
 {
   imports = [
-    ./hardware-configuration.nix
+    ./etc/nixos/hardware-configuration.nix
     ./system/fonts.nix
     ./system/gpu.nix
     ./system/locales.nix
