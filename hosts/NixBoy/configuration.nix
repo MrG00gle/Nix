@@ -17,10 +17,10 @@
     ./system/user.nix
   ]; #++ (lib.mapAttrsToList (name: path: import path) modulePaths);
   
-    # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  # Bootloader.
+  boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/vda";
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.useOSProber = true;
 
     nixpkgs.config.allowUnfree = lib.mkForce true;
 
