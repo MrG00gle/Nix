@@ -65,6 +65,7 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.vitals
     gnomeExtensions.search-light
+    gnomeExtensions.random-wallpaper
 
     # Other
     papirus-icon-theme

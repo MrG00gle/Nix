@@ -69,6 +69,7 @@
               clipboard-indicator.extensionUuid
               vitals.extensionUuid
               search-light.extensionUuid
+              random-wallpaper.extensionUuid
             ];
           };
 
@@ -130,6 +131,25 @@
             show-system = false;
             show-voltage = false;
             update-time = lib.gvariant.mkInt16 1;
+          };
+
+          "org/gnome/shell/extensions/space-iflow-randomwallpaper/sources/reddit/1741025398760" = {
+            allow-sfw = true;
+            image-ratio2 = lib.gvariant.mkInt16 9;
+            subreddits = "wallpaper";
+          };
+
+          "org/gnome/shell/extensions/space-iflow-randomwallpaper" = {
+            auto-fetch = true;
+            change-type = lib.gvariant.mkInt16 2;
+            fetch-on-startup = false;
+            hide-panel-icon = true;
+            history-length = lib.gvariant.mkInt16 5;
+            hours = lib.gvariant.mkInt16 12;
+            minutes = lib.gvariant.mkInt16 1;
+            log-level = lib.gvariant.mkInt16 0;
+            scaling-mode = "zoom";
+            sources = ["1741025398760"];
           };
 
           "org/gnome/shell/keybindings" = {
