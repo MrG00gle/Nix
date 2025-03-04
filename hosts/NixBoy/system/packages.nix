@@ -3,10 +3,13 @@
   environment.gnome.excludePackages = (with pkgs; [
     atomix # puzzle game
     cheese # webcam tool
+    gnome-yelp
+    gnome-software
+    gnome-characters
+    gnome-contacts
     gnome-music
     gnome-photos
     gnome-maps
-    gnome-console
     geary # mail client
     epiphany # gnome browser
     gnome-tour

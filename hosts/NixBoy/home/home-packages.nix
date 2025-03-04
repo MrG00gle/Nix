@@ -20,7 +20,7 @@
     qbittorrent
     gnome-extension-manager
     # ptyxis
-    gnome-terminal
+    gnome-console
     
     # Gaming stuff
     bottles
