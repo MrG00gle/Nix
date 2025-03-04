@@ -13,15 +13,14 @@
     vlc
     kdenlive
     helvum
-    gnome-software
     gnome-boxes
     pdfarranger
     wireshark
     qbittorrent
     gnome-extension-manager
-    # ptyxis
     gnome-console
-    
+    # ptyxis
+
     # Gaming stuff
     bottles
     mission-center
@@ -32,19 +31,10 @@
     vscode
     jetbrains.pycharm-community
     jetbrains.pycharm-professional
-    gcc
-    ollama
-    #python312  # collision
-    #python311  # collision
-    #python39   # collision
     
     # CLI utils
-    neofetch
-    nano
     file
     tree
-    wget
-    git
     fastfetch
     htop
     nvtopPackages.panthor

@@ -22,5 +22,15 @@
   # Enabling Gamemode (Because homemanager do not handles gamemode)
   programs.gamemode.enable = true;
 
-  environment.systemPackages = with pkgs; [];
+  environment.systemPackages = with pkgs; [
+    wget
+    git
+    neofetch
+    nano
+    gcc
+    ollama
+    python312  # collision
+    python311  # collision
+    python39   # collision
+  ];
 }
