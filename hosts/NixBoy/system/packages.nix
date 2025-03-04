@@ -3,7 +3,7 @@
   environment.gnome.excludePackages = (with pkgs; [
     atomix # puzzle game
     cheese # webcam tool
-    gnome-yelp
+    yelp
     gnome-software
     gnome-characters
     gnome-contacts
