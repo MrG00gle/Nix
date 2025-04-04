@@ -18,9 +18,14 @@
   ]; #++ (lib.mapAttrsToList (name: path: import path) modulePaths);
   
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
+  # For VM
+  #boot.loader.grub.enable = true;
+  #boot.loader.grub.device = "/dev/vda";
+  #boot.loader.grub.useOSProber = true;
+  # Actual hardware
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
 
   nixpkgs.config.allowUnfree = lib.mkForce true;
 
