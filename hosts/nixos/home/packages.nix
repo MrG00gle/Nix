@@ -1,6 +1,6 @@
 { pkgs, flake-inputs, lib, ... }: {
 
-  imports = [ flake-inputs.flatpaks.homeManagerModules.nix-flatpak ];
+#  imports = [ flake-inputs.flatpaks.homeManagerModules.nix-flatpak ];
 
     # Add a new remote. Keep the default one (flathub)
   services.flatpak.remotes = lib.mkOptionDefault [{
