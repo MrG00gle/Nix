@@ -48,7 +48,7 @@
     vscode
     vscodium
     jetbrains.pycharm-community
-    jetbrains.pycharm-professional
+#    jetbrains.pycharm-professional
     
     # CLI utils
     fastfetch
