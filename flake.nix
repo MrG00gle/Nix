@@ -31,6 +31,7 @@
       };
 
       nixos = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
         system = "x86_64-linux";
         modules = [
           nix-flatpak.nixosModules.nix-flatpak
@@ -41,7 +42,7 @@
             home-manager.users.vmboy = import ./hosts/nixos/home/home.nix;
             home-manager.extraSpecialArgs.flake-inputs = inputs;
           }
-          ./hosts/NixBoy/configuration.nix
+          ./hosts/nixos/configuration.nix
         ];
       };
 
