@@ -30,9 +30,17 @@
         ];
       };
 
-      VmBoy = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      nixos = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
         modules = [
+          nix-flatpak.nixosModules.nix-flatpak
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.vmboy = import ./hosts/nixos/home/home.nix;
+            home-manager.extraSpecialArgs.flake-inputs = inputs;
+          }
           ./hosts/NixBoy/configuration.nix
         ];
       };
