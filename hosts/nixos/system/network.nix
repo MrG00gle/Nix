@@ -2,7 +2,7 @@
 
   networking.networkmanager.enable = true;
   # networking.wireless.enable = true;
-  networking.hostName = "NixBoy"; # Hostname.
+  networking.hostName = "nixos"; # Hostname.
 
   # Firewall rules for Steam
   programs.steam = {
