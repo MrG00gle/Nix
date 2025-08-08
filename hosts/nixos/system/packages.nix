@@ -24,7 +24,6 @@
 
   environment.systemPackages = with pkgs; [
     wget
-    make
     git
     neofetch
     file
