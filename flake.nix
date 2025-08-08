@@ -12,7 +12,7 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ nixpkgs, nix-flatpak, home-manager, ... }: {
     nixosConfigurations = {
 
       NixBoy = nixpkgs.lib.nixosSystem {
