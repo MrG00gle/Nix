@@ -29,6 +29,7 @@
     file
     tree
     nano
+    nix-output-monitor
     gcc
     gamemode
     go
