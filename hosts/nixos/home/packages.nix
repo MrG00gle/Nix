@@ -1,16 +1,12 @@
 { pkgs, flake-inputs, lib, ... }: {
 
-#  imports = [ flake-inputs.flatpaks.homeManagerModules.nix-flatpak ];
-
-    # Add a new remote. Keep the default one (flathub)
+  # Add a new remote. Keep the default one (flathub)
   services.flatpak.remotes = lib.mkOptionDefault [{
     name = "flathub-beta";
     location = "https://flathub.org/beta-repo/flathub-beta.flatpakrepo";
   }];
 
   services.flatpak.update.auto.enable = false;
-
-
   services.flatpak.packages = [
     { appId = "app.zen_browser.zen"; origin = "flathub";  }
   ];
@@ -37,13 +33,15 @@
     gnome-extension-manager
     gnome-console
     solaar
-    # ptyxis
+    easyeffects
 
     # Gaming stuff
     bottles
     mission-center
     mangohud
     sidequest
+    alvr
+    # lenovo-legion #Uncoment only on laptop profile
 
     # Coding stuff
 #    vscode
