@@ -18,7 +18,7 @@
       NixBoy = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-#          nix-flatpak.nixosModules.nix-flatpak
+
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
