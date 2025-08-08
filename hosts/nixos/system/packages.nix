@@ -24,6 +24,7 @@
 
   environment.systemPackages = with pkgs; [
     wget
+    make
     git
     neofetch
     file
@@ -35,8 +36,8 @@
     rustc
     ollama
     docker
-    python312  # collision
-    python311  # collision
-    python39   # collision
+    python312
+    python311
+    python310
   ];
 }
