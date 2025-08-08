@@ -5,10 +5,18 @@
   users = {
     defaultUserShell = lib.mkForce pkgs.fish; # Setting default Shell to fish (But with lowe priority 1000)
 
-    users.mrgoogle = {
+    users.vmboy = {
       isNormalUser = true;
-      description = "mrGoogle";
-      extraGroups = [ "networkmanager" "wheel" "video" "audio" "tty" "docker"];
+      initialPassword = "12345";
+      description = "VmBoy";
+      extraGroups = [
+      "networkmanager"
+      "wheel"
+      "video"
+      "audio"
+      "tty"
+      "docker"
+      ];
       packages = with pkgs; []; # Packages are handled by home-manager
     };
   };

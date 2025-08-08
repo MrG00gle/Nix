@@ -7,8 +7,8 @@
     ./window_managers/gnome.nix
   ];
 
-  home.username = "mrgoogle";
-  home.homeDirectory = "/home/mrgoogle";
+  home.username = "vmboy";
+  home.homeDirectory = "/home/vmboy";
   home.stateVersion = "25.05";
   programs.home-manager.enable = true;
 }

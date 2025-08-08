@@ -14,7 +14,7 @@
     ./system/sound.nix
     ./system/bluetooth.nix
     ./system/store.nix
-    ./system/user.nix
+    ./system/users.nix
   ]; #++ (lib.mapAttrsToList (name: path: import path) modulePaths);
   
   # Bootloader.
@@ -35,5 +35,5 @@
 
   time.timeZone = "Europe/Warsaw";
 
-  system.stateVersion = "24.11"; # Don't change it bro
+  system.stateVersion = "25.05";
 }

@@ -1,4 +1,11 @@
-{ pkgs, ... }: {
+{ pkgs, flake-inputs, ... }: {
+
+  imports = [ flake-inputs.flatpaks.homeManagerModules.nix-flatpak ];
+
+  services.flatpak.packages = [
+    { appId = "flatpak run app.zen_browser.zen"; origin = "flathub";  }
+  ];
+
   home.packages = with pkgs; [
   
     # Desktop apps
@@ -14,6 +21,7 @@
     kdenlive
     helvum
     gnome-boxes
+    virtualbox
     pdfarranger
     wireshark
     qbittorrent
@@ -29,19 +37,18 @@
 
     # Coding stuff
     vscode
+    vscodium
     jetbrains.pycharm-community
     jetbrains.pycharm-professional
     
     # CLI utils
-    file
-    tree
     fastfetch
     htop
     nvtopPackages.panthor
     nix-index
     unzip
     scrot
-    ffmpeg
+    socat
     nmap
     fish
     zsh-powerlevel10k
