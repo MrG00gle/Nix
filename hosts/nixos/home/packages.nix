@@ -12,7 +12,8 @@
 
 
   services.flatpak.packages = [
-    { appId = "flatpak run app.zen_browser.zen"; origin = "flathub";  }
+
+    app.zen_browser.zen
   ];
 
   home.packages = with pkgs; [
@@ -36,6 +37,7 @@
     qbittorrent
     gnome-extension-manager
     gnome-console
+    solaar
     # ptyxis
 
     # Gaming stuff
