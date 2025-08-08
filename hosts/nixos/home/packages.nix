@@ -12,8 +12,7 @@
 
 
   services.flatpak.packages = [
-
-    app.zen_browser.zen
+    { appId = "app.zen_browser.zen"; origin = "flathub";  }
   ];
 
   home.packages = with pkgs; [
@@ -30,7 +29,7 @@
     vlc
     kdePackages.kdenlive
     helvum
-    gnome-boxes
+#    gnome-boxes
     virtualbox
     pdfarranger
     wireshark
