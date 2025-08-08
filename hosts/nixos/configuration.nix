@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./system/fonts.nix
-      ./system/gpu.nix
+#      ./system/gpu.nix
       ./system/locales.nix
       ./system/network.nix
       ./system/packages.nix
