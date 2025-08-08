@@ -27,7 +27,7 @@
     obsidian
     audacity
     vlc
-    kdenlive
+    kdePackages.kdenlive
     helvum
     gnome-boxes
     virtualbox
