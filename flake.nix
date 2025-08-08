@@ -18,13 +18,13 @@
       NixBoy = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          nix-flatpak.nixosModules.nix-flatpak
+#          nix-flatpak.nixosModules.nix-flatpak
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.mrgoogle = import ./hosts/NixBoy/home/home.nix;
             home-manager.extraSpecialArgs.flake-inputs = inputs;
+            home-manager.users.mrgoogle = import ./hosts/NixBoy/home/home.nix;
           }
           ./hosts/NixBoy/configuration.nix
         ];
@@ -34,13 +34,16 @@
         specialArgs = {inherit inputs;};
         system = "x86_64-linux";
         modules = [
-          nix-flatpak.nixosModules.nix-flatpak
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.vmboy = import ./hosts/nixos/home/home.nix;
             home-manager.extraSpecialArgs.flake-inputs = inputs;
+            home-manager.users.vmboy.imports = [
+              nix-flatpak.homeManagerModules.nix-flatpak
+              ./hosts/nixos/home/home.nix
+            ];
+#            home-manager.users.vmboy = import ./hosts/nixos/home/home.nix;
           }
           ./hosts/nixos/configuration.nix
         ];
