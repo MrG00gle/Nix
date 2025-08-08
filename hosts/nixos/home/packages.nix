@@ -45,7 +45,7 @@
     sidequest
 
     # Coding stuff
-    vscode
+#    vscode
     vscodium
     jetbrains.pycharm-community
 #    jetbrains.pycharm-professional
