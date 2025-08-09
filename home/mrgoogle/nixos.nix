@@ -4,6 +4,7 @@
     ./home.nix
     ../common/apps/git.nix
     ../common/apps/shell.nix
+    ../common/apps/easyeffects.nix
     ../common/desktop/gnome.nix
   ];
 

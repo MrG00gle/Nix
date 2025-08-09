@@ -4,10 +4,13 @@
     ./home.nix
     ../common/apps/git.nix
     ../common/apps/shell.nix
+    ../common/apps/easyeffects.nix
     ../common/desktop/gnome.nix
   ];
 
- # Add a new remote. Keep the default one (flathub)
+  services.flatpak.enable = true;
+
+  # Add a new remote. Keep the default one (flathub)
   services.flatpak.remotes = lib.mkOptionDefault [{
     name = "flathub-beta";
     location = "https://flathub.org/beta-repo/flathub-beta.flatpakrepo";
