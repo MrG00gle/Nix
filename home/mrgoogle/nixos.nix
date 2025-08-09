@@ -2,9 +2,9 @@
 {
   imports = [
     ./home.nix
-    ../apps/git.nix
-    ../apps/shell.nix
-    ../desktop/gnome.nix
+    ../common/apps/git.nix
+    ../common/apps/shell.nix
+    ../common/desktop/gnome.nix
   ];
 
  # Add a new remote. Keep the default one (flathub)
