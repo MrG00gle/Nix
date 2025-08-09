@@ -61,7 +61,7 @@
           # Extentions
           "org/gnome/shell" = {
             disable-user-extensions = false;
-            enabled-extensions = with pkgs.gnomeExtensions; [ 
+            enabled-extensions = with pkgs.gnomeExtensions; [
               appindicator.extensionUuid
               bluetooth-battery-meter.extensionUuid
               dash-to-dock.extensionUuid

@@ -1,6 +1,13 @@
-{ pkgs, flake-inputs, lib, ... }: {
+{ config, pkgs, flake-inputs, lib, ... }:
+{
+  imports = [
+    ./home.nix
+    ../apps/git.nix
+    ../apps/shell.nix
+    ../desktop/gnome.nix
+  ];
 
-  # Add a new remote. Keep the default one (flathub)
+ # Add a new remote. Keep the default one (flathub)
   services.flatpak.remotes = lib.mkOptionDefault [{
     name = "flathub-beta";
     location = "https://flathub.org/beta-repo/flathub-beta.flatpakrepo";
@@ -12,7 +19,7 @@
   ];
 
   home.packages = with pkgs; [
-  
+
     # Desktop apps
     firefox
     ungoogled-chromium
@@ -48,7 +55,7 @@
     vscodium
     jetbrains.pycharm-community
 #    jetbrains.pycharm-professional
-    
+
     # CLI utils
     fastfetch
     htop
@@ -75,4 +82,5 @@
     # Other
     papirus-icon-theme
   ];
+
 }

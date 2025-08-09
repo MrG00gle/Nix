@@ -40,7 +40,7 @@
             home-manager.extraSpecialArgs.flake-inputs = inputs;
             home-manager.users.vmboy.imports = [
               nix-flatpak.homeManagerModules.nix-flatpak
-              ./hosts/nixos/home/home.nix
+              ./home/vmboy/nixos.nix
             ];
 #            home-manager.users.vmboy = import ./hosts/nixos/home/home.nix;
           }
