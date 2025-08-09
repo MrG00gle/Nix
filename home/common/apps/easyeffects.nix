@@ -1,7 +1,7 @@
 {lib, ...}: {
 
 #  programs.dconf.enable = true;
-  home.options.services.easyeffects.extraPresets = {
+  options.services.easyeffects.extraPresets = {
     tonor-tc20 = {
       input = {
         blocklist = [];
