@@ -29,14 +29,15 @@
     file
     tree
     nano
+    nix-output-monitor
     gcc
     gamemode
     go
     rustc
     ollama
     docker
-    python312  # collision
-    python311  # collision
-    python39   # collision
+#    python312
+#    python311
+    python310
   ];
 }

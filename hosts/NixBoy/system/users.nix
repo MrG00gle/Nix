@@ -8,7 +8,7 @@
     users.mrgoogle = {
       isNormalUser = true;
       initialPassword = "12345";
-      description = "mrGoogle, owner of pc.";
+      description = "MrGoogle";
       extraGroups = [
       "networkmanager"
       "wheel"

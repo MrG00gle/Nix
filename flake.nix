@@ -23,7 +23,10 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs.flake-inputs = inputs;
-            home-manager.users.mrgoogle = import ./hosts/NixBoy/home/home.nix;
+            home-manager.users.mrgoogle.imports = [
+              nix-flatpak.homeManagerModules.nix-flatpak
+              ./home/mrgoogle/NixBoy.nix
+            ];
           }
           ./hosts/NixBoy/configuration.nix
         ];
