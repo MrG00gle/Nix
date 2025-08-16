@@ -7,7 +7,7 @@
 
     users.mrgoogle = {
       isNormalUser = true;
-      initialPassword = "12345";
+      initialPassword = "12345678";
       description = "MrGoogle";
       extraGroups = [
       "networkmanager"
@@ -16,6 +16,12 @@
       "audio"
       "tty"
       "docker"
+      "flatpak"
+      "plugdev"
+      "input"
+      "kvm"
+      "qemu-libvirtd"
+
       ];
       packages = with pkgs; []; # Packages are handled by home-manager
     };
