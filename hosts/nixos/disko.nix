@@ -21,7 +21,7 @@
             root = {
               size = "100%";
               content = {
-                  type = lib.mkDefault "btrfs";
+                  type = lib.mkOptionDefault "btrfs";
                   extraArgs = ["-L" "nixos" "-f"];
                   subvolumes = {
                     "/root" = {
