@@ -44,6 +44,7 @@
     gnome-console
     solaar
     easyeffects
+    parabolic
 
     # Gaming stuff
     bottles

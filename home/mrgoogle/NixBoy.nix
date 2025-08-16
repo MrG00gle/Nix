@@ -44,6 +44,7 @@
     gnome-console
     solaar
     easyeffects
+    parabolic
 
     # Gaming stuff
     bottles
@@ -51,7 +52,7 @@
     mangohud
     sidequest
     alvr
-    # lenovo-legion #Uncoment only on laptop profile
+    lenovo-legion
 
     # Coding stuff
 #    vscode
