@@ -106,9 +106,9 @@
           };
 
           "org/gnome/shell/extensions/search-light" = {
-            background-color = "rgb(36,36,36)";
-            blur-background = false;
-            blur-brightness = lib.gvariant.mkDouble 0.59999999999999998;
+            background-color = "rgb(40, 40, 44)";
+            blur-background = lib.mkForce false;
+            blur-brightness = lib.gvariant.mkDouble 0.6;
             blur-sigma = lib.gvariant.mkDouble 30.0;
             border-radius = lib.gvariant.mkDouble 2.40625;
             currency-converter = true;
@@ -119,7 +119,7 @@
             scale-width = lib.gvariant.mkDouble 0.10000000000000001;
             shortcut-search = ["<Alt>space"];
             show-panel-icon = false;
-            text-color = "rgba(224, 224, 224, 0.95)";
+            text-color = "rgba(190, 190, 192, 0.95)";
             unit-converter = true;
           };
 
@@ -161,8 +161,8 @@
             activate-window-menu = lib.gvariant.mkEmptyArray "s";
             view-split-on-left = lib.gvariant.mkEmptyArray "s";
             view-split-on-right = lib.gvariant.mkEmptyArray "s";
-            switch-to-workspace-left = ["<Super>Left"];
-            switch-to-workspace-right= ["<Super>Right"];
+#            switch-to-workspace-left = ["<Super>Left"];
+#            switch-to-workspace-right= ["<Super>Right"];
             switch-input-source = ["<Super>space"];
           };
 

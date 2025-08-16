@@ -8,8 +8,6 @@
     ../common/desktop/gnome.nix
   ];
 
-  services.flatpak.enable = true;
-
   # Add a new remote. Keep the default one (flathub)
   services.flatpak.remotes = lib.mkOptionDefault [{
     name = "flathub-beta";
@@ -24,7 +22,7 @@
   home.packages = with pkgs; [
 
     # Desktop apps
-    firefox
+#    firefox
     ungoogled-chromium
     telegram-desktop
     discord

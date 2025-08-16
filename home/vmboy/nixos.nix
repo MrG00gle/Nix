@@ -22,7 +22,7 @@
   home.packages = with pkgs; [
 
     # Desktop apps
-    firefox
+#    firefox
     ungoogled-chromium
     telegram-desktop
     discord

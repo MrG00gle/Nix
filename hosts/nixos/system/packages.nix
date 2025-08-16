@@ -17,6 +17,7 @@
     iagno # go game
     tali # poker game
     totem # video player
+    firefox
   ]);
 
   # Enabling Gamemode (Because HomeManager do not handles gamemode)
