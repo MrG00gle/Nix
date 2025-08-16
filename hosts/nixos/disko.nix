@@ -1,4 +1,4 @@
-{lib, ...}:{
+{
   disko.devices = {
     disk = {
       sda = {
@@ -21,7 +21,7 @@
             root = {
               size = "100%";
               content = {
-                  type = lib.mkOptionDefault "btrfs";
+                  type = "btrfs";
                   extraArgs = ["-L" "nixos" "-f"];
                   subvolumes = {
                     "/root" = {
