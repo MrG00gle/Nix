@@ -10,4 +10,10 @@
 
   services.flatpak.enable = true;
 
+  services.btrfs.autoScrub = {
+  enable = true;
+  interval = "weekly";
+  fileSystems = [ "/" ];
+};
+
 }
