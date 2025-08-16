@@ -8,4 +8,6 @@
     desktopManager.gnome.enable = true;
   };
 
+  services.flatpak.enable = true;
+
 }

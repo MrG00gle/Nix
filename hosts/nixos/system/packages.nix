@@ -25,13 +25,11 @@
   environment.systemPackages = with pkgs; [
     wget
     git
-    neofetch
     file
     tree
     nano
     nix-output-monitor
     gcc
-    gamemode
     go
     rustc
     ollama

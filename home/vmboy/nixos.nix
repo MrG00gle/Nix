@@ -51,6 +51,7 @@
     sidequest
     alvr
     # lenovo-legion #Uncoment only on laptop profile
+    gamemode
 
     # Coding stuff
 #    vscode
@@ -59,8 +60,10 @@
 #    jetbrains.pycharm-professional
 
     # CLI utils
-    fastfetch
+    neofetch
+    ffmpeg
     htop
+    btop
     nvtopPackages.panthor
     nix-index
     unzip

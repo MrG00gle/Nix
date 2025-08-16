@@ -53,6 +53,7 @@
     sidequest
     alvr
     lenovo-legion
+    gamemode
 
     # Coding stuff
 #    vscode
@@ -61,8 +62,10 @@
 #    jetbrains.pycharm-professional
 
     # CLI utils
-    fastfetch
+    neofetch
+    ffmpeg
     htop
+    btop
     nvtopPackages.panthor
     nix-index
     unzip
@@ -70,6 +73,7 @@
     socat
     nmap
     fish
+    zsh
     zsh-powerlevel10k
     nix-output-monitor
 
