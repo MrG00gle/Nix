@@ -10,16 +10,14 @@ programs.zsh = {
       enable = true;
       plugins = [
         "git"
-#        "direnv"
+        "direnv"
       ];
       theme = "robbyrussell";
     };
     shellAliases = {
       ff = "fastfetch";
-      cd = "z";
       ls = "eza";
       lg = "lazygit";
-      vi = "nvim";
     };
     history = {
       expireDuplicatesFirst = true;

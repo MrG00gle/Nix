@@ -60,7 +60,9 @@
 #    jetbrains.pycharm-professional
 
     # CLI utils
-    neofetch
+    fastfetch
+    lazygit
+    eza
     ffmpeg
     htop
     btop
