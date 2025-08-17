@@ -39,6 +39,6 @@
     docker
 #    python312
 #    python311
-    python310
+    # python310
   ];
 }
