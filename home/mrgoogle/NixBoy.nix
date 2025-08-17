@@ -40,7 +40,7 @@
     qbittorrent
     gnome-extension-manager
     gnome-console
-    solaar
+    # solaar
     easyeffects
     parabolic
 
@@ -50,7 +50,7 @@
     mangohud
     sidequest
     alvr
-    lenovo-legion
+    # lenovo-legion
     gamemode
 
     # Coding stuff

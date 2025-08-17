@@ -1,10 +1,10 @@
 {
 
-  networking.networkmanager.enable = true;
-  # networking.wireless = {
-  #   enable = true;
-  #   userControlled.enable = true;
-  # };
+  # networking.networkmanager.enable = true;
+  networking.wireless = {
+    enable = true;
+    userControlled.enable = true;
+  };
 
   networking.hostName = "nixos"; # Hostname.
 
