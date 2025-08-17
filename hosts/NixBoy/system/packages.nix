@@ -30,6 +30,8 @@
     tree
     nano
     nix-output-monitor
+    pciutils
+    mesa-demos
     gcc
     go
     rustc

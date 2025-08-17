@@ -1,4 +1,8 @@
  { config, lib, pkgs, ... }: {
+  hardware.graphics.enable = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
+  # hardware.nvidia.open = false;
+
   services.thermald.enable = lib.mkDefault true;  # Cooling management
   hardware.graphics.enable = true;  # Enable OpenGL
 
@@ -16,7 +20,7 @@
         enable = true;
         enableOffloadCmd = true;
       };
-      amdgpuBusId = "PCI:6:0:0";
+      amdgpuBusId = "PCI:5:0:0";
       nvidiaBusId = "PCI:1:0:0";
     };
   };
