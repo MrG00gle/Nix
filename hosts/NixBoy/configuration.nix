@@ -5,6 +5,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./disko.nix
     ./system/fonts.nix
     ./system/gpu.nix
     ./system/locales.nix
