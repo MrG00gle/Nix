@@ -21,6 +21,7 @@
 
   # Enabling Gamemode (Because HomeManager do not handles gamemode)
   programs.gamemode.enable = true;
+  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     wget
