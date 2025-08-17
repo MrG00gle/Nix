@@ -10,18 +10,17 @@
       initialPassword = "12345678";
       description = "MrGoogle";
       extraGroups = [
-      "networkmanager"
-      "wheel"
-      "video"
-      "audio"
-      "tty"
-      "docker"
-      "flatpak"
-      "plugdev"
-      "input"
-      "kvm"
-      "qemu-libvirtd"
-
+        "networkmanager"
+        "wheel"
+        "video"
+        "audio"
+        "tty"
+        "docker"
+        "flatpak"
+        "plugdev"
+        "input"
+        "kvm"
+        "qemu-libvirtd"
       ];
       packages = with pkgs; []; # Packages are handled by home-manager
     };
