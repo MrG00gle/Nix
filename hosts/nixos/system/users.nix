@@ -21,6 +21,8 @@
     };
   };
 
+  nix.settings.trusted-users = [ "root" "vmboy" ];
+
   # Enable automatic login for the user.
   # services.getty.autologinUser = "mrgoogle";
 }
