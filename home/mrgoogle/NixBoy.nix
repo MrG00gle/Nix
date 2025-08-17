@@ -60,6 +60,7 @@
 #    jetbrains.pycharm-professional
 
     # CLI utils
+    zsh-autosuggestions
     fastfetch
     lazygit
     eza

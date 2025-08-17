@@ -11,6 +11,7 @@ programs.zsh = {
       plugins = [
         "git"
         "direnv"
+        "zsh-autosuggestions"
       ];
       theme = "robbyrussell";
     };
