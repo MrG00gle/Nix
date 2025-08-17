@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+ { config, lib, pkgs, ... }: {
   services.thermald.enable = lib.mkDefault true;  # Cooling management
   hardware.graphics.enable = true;  # Enable OpenGL
 

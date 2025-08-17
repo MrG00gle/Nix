@@ -21,22 +21,22 @@
 
   # Enabling Gamemode (Because HomeManager do not handles gamemode)
   programs.gamemode.enable = true;
+  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     wget
     git
-    neofetch
     file
     tree
     nano
+    nix-output-monitor
     gcc
-    gamemode
     go
     rustc
     ollama
     docker
-    python312  # collision
-    python311  # collision
-    python39   # collision
+#    python312
+#    python311
+    python310
   ];
 }

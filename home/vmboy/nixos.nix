@@ -1,15 +1,28 @@
-{ pkgs, flake-inputs, ... }: {
+{ config, pkgs, flake-inputs, lib, ... }:
+{
+  imports = [
+    ./home.nix
+    ../common/apps/git.nix
+    ../common/apps/zsh.nix
+    ../common/apps/easyeffects.nix
+    ../common/desktop/gnome.nix
+  ];
 
-  imports = [ flake-inputs.flatpaks.homeManagerModules.nix-flatpak ];
+ # Add a new remote. Keep the default one (flathub)
+  services.flatpak.remotes = lib.mkOptionDefault [{
+    name = "flathub-beta";
+    location = "https://flathub.org/beta-repo/flathub-beta.flatpakrepo";
+  }];
 
+  services.flatpak.update.auto.enable = false;
   services.flatpak.packages = [
-    { appId = "flatpak run app.zen_browser.zen"; origin = "flathub";  }
+    { appId = "app.zen_browser.zen"; origin = "flathub";  }
   ];
 
   home.packages = with pkgs; [
-  
+
     # Desktop apps
-    firefox
+#    firefox
     ungoogled-chromium
     telegram-desktop
     discord
@@ -18,32 +31,43 @@
     obsidian
     audacity
     vlc
-    kdenlive
+    kdePackages.kdenlive
     helvum
-    gnome-boxes
+#    gnome-boxes
     virtualbox
     pdfarranger
     wireshark
     qbittorrent
     gnome-extension-manager
     gnome-console
-    # ptyxis
+    solaar
+    easyeffects
+    parabolic
 
     # Gaming stuff
     bottles
     mission-center
     mangohud
     sidequest
+    alvr
+    # lenovo-legion #Uncoment only on laptop profile
+    gamemode
 
     # Coding stuff
-    vscode
+#    vscode
     vscodium
     jetbrains.pycharm-community
-    jetbrains.pycharm-professional
-    
+#    jetbrains.pycharm-professional
+    devenv
+
     # CLI utils
+    zsh-autosuggestions
     fastfetch
+    lazygit
+    eza
+    ffmpeg
     htop
+    btop
     nvtopPackages.panthor
     nix-index
     unzip
@@ -67,4 +91,5 @@
     # Other
     papirus-icon-theme
   ];
+
 }

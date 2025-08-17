@@ -1,4 +1,12 @@
-{ pkgs, flake-inputs, lib, ... }: {
+{ config, pkgs, flake-inputs, lib, ... }:
+{
+  imports = [
+    ./home.nix
+    ../common/apps/git.nix
+    ../common/apps/zsh.nix
+    ../common/apps/easyeffects.nix
+    ../common/desktop/gnome.nix
+  ];
 
   # Add a new remote. Keep the default one (flathub)
   services.flatpak.remotes = lib.mkOptionDefault [{
@@ -12,9 +20,9 @@
   ];
 
   home.packages = with pkgs; [
-  
+
     # Desktop apps
-    firefox
+#    firefox
     ungoogled-chromium
     telegram-desktop
     discord
@@ -34,6 +42,7 @@
     gnome-console
     solaar
     easyeffects
+    parabolic
 
     # Gaming stuff
     bottles
@@ -41,17 +50,23 @@
     mangohud
     sidequest
     alvr
-    # lenovo-legion #Uncoment only on laptop profile
+    lenovo-legion
+    gamemode
 
     # Coding stuff
 #    vscode
     vscodium
     jetbrains.pycharm-community
 #    jetbrains.pycharm-professional
-    
+
     # CLI utils
+    zsh-autosuggestions
     fastfetch
+    lazygit
+    eza
+    ffmpeg
     htop
+    btop
     nvtopPackages.panthor
     nix-index
     unzip
@@ -59,6 +74,7 @@
     socat
     nmap
     fish
+    zsh
     zsh-powerlevel10k
     nix-output-monitor
 
@@ -75,4 +91,5 @@
     # Other
     papirus-icon-theme
   ];
+
 }

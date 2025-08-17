@@ -17,21 +17,21 @@
     iagno # go game
     tali # poker game
     totem # video player
+    firefox
   ]);
 
   # Enabling Gamemode (Because HomeManager do not handles gamemode)
   programs.gamemode.enable = true;
+  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     wget
     git
-    neofetch
     file
     tree
     nano
     nix-output-monitor
     gcc
-    gamemode
     go
     rustc
     ollama
