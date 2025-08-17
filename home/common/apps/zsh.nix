@@ -11,7 +11,7 @@ programs.zsh = {
       plugins = [
         "git"
         "direnv"
-        "zsh-autosuggestions"
+        # "zsh-autosuggestions"
       ];
       theme = "robbyrussell";
     };
@@ -19,6 +19,7 @@ programs.zsh = {
       ff = "fastfetch";
       ls = "eza";
       lg = "lazygit";
+      pingtest = "ping 8.8.8.8";
     };
     history = {
       expireDuplicatesFirst = true;

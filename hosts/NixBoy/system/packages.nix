@@ -37,8 +37,5 @@
     rustc
     ollama
     docker
-#    python312
-#    python311
-    # python310
   ];
 }

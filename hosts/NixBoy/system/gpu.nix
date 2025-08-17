@@ -1,7 +1,5 @@
  { config, lib, pkgs, ... }: {
-  # hardware.graphics.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
-  # hardware.nvidia.open = false;
 
   services.thermald.enable = lib.mkDefault true;  # Cooling management
   hardware.graphics.enable = true;  # Enable OpenGL

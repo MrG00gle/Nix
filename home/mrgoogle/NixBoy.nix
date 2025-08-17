@@ -40,7 +40,7 @@
     qbittorrent
     gnome-extension-manager
     gnome-console
-    # solaar
+    solaar
     easyeffects
     parabolic
 
@@ -50,17 +50,17 @@
     mangohud
     sidequest
     alvr
-    # lenovo-legion
+    lenovo-legion
     gamemode
 
     # Coding stuff
-#    vscode
-    vscodium
+    vscode
+    # vscodium
     jetbrains.pycharm-community
-#    jetbrains.pycharm-professional
+    # jetbrains.pycharm-professional
 
     # CLI utils
-    zsh-autosuggestions
+    nix-output-monitor
     fastfetch
     lazygit
     eza
@@ -75,8 +75,8 @@
     nmap
     fish
     zsh
+    zsh-autosuggestions
     zsh-powerlevel10k
-    nix-output-monitor
 
     # GNOME extentions
     gnomeExtensions.appindicator
