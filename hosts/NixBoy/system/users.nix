@@ -3,7 +3,7 @@
   programs.fish.enable = lib.mkForce true; # Setting default Shell to fish (But with lowe priority 1500)
 
   users = {
-    defaultUserShell = lib.mkForce pkgs.fish; # Setting default Shell to fish (But with lowe priority 1000)
+    defaultUserShell = lib.mkForce pkgs.zsh; # Setting default Shell to fish (But with lowe priority 1000)
 
     users.mrgoogle = {
       isNormalUser = true;

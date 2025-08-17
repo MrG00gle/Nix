@@ -11,10 +11,10 @@
         };
 
         # Desktop settings
-          "org/gnome/desktop/media-handling".automount = false;                 # Turning off the automout on incert
-          "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";         # Turning off mouse acceleration
-          "org/gnome/desktop/peripherals/touchpad".two-finger-scrolling-enabled = true;
-          "org/gnome/desktop/session".idle-delay = lib.gvariant.mkUint32 0;     # Time till idle
+        "org/gnome/desktop/media-handling".automount = false;                 # Turning off the automout on incert
+        "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";         # Turning off mouse acceleration
+        "org/gnome/desktop/peripherals/touchpad".two-finger-scrolling-enabled = true;
+        "org/gnome/desktop/session".idle-delay = lib.gvariant.mkUint32 0;     # Time till idle
 
         "org/gnome/mutter" = {
           edge-tiling = true;
