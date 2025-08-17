@@ -3,7 +3,7 @@
   imports = [
     ./home.nix
     ../common/apps/git.nix
-    ../common/apps/shell.nix
+    ../common/apps/zsh.nix
     ../common/apps/easyeffects.nix
     ../common/desktop/gnome.nix
   ];
