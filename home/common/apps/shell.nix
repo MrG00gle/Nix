@@ -10,7 +10,7 @@ programs.zsh = {
       enable = true;
       plugins = [
         "git"
-        "direnv"
+#        "direnv"
       ];
       theme = "robbyrussell";
     };
