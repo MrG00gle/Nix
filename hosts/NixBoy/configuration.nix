@@ -4,8 +4,7 @@
 # in
 {
   imports = [
-#    ./hardware-configuration.nix
-    /etc/nixos/hardware-configuration.nix
+    ./hardware-configuration.nix
     ./system/fonts.nix
     ./system/gpu.nix
     ./system/locales.nix
