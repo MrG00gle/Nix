@@ -1,8 +1,8 @@
 {
 
-  networking.networkmanager.enable = true;
+  # networking.networkmanager.enable = true;
   networking.wireless.enable = true;
-  
+
   networking.hostName = "nixos"; # Hostname.
 
   # Firewall rules for Steam
