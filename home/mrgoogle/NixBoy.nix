@@ -50,7 +50,7 @@
     mangohud
     sidequest
     alvr
-    lenovo-legion
+    # lenovo-legion
     gamemode
 
     # Coding stuff
