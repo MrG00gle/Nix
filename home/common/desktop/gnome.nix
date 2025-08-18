@@ -107,9 +107,9 @@
 
           "org/gnome/shell/extensions/search-light" = {
             background-color = "rgb(40, 40, 44)";
-            blur-background = lib.mkForce false;
-            blur-brightness = lib.gvariant.mkDouble 0.6;
-            blur-sigma = lib.gvariant.mkDouble 30.0;
+            # blur-background = lib.mkForce false;
+            # blur-brightness = lib.gvariant.mkDouble 0.6;
+            # blur-sigma = lib.gvariant.mkDouble 30.0;
             border-radius = lib.gvariant.mkDouble 2.40625;
             currency-converter = true;
             entry-font-size = lib.gvariant.mkInt16 0;
