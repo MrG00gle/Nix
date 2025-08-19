@@ -73,7 +73,7 @@
           ];
         };
 
-        "/org/gnome/shell/extensions/auto-move-windows" = {
+        "org/gnome/shell/extensions/auto-move-windows" = {
           application-list = [ "org.telegram.desktop.desktop:2" "discord.desktop:2" "steam.desktop:3" ];
         };
 
