@@ -81,22 +81,22 @@
         "org/gnome/shell/extensions/dash-to-dock" = {
           application-counter-overrides-notifications = true;
           background-color = "rgb(36,36,36)";
-          background-opacity = lib.gvariant.mkDouble 0.80000000000000004;
+          background-opacity = 0.8;
           click-action = "minimize";
           custom-background-color = true;
           custom-theme-shrink = false;
-          dash-max-icon-size = lib.gvariant.mkInt16 46;
+          dash-max-icon-size = 46;
           dock-position = "BOTTOM";
           extend-height=false;
-          height-fraction = lib.gvariant.mkDouble 0.90000000000000002;
+          height-fraction = 0.9;
           hide-tooltip = false;
           icon-size-fixed = false;
           intellihide-mode = "FOCUS_APPLICATION_WINDOWS";
           middle-click-action = "launch";
           multi-monitor = true;
-          preferred-monitor = lib.gvariant.mkInt16 2;
+          preferred-monitor = 2;
           preferred-monitor-by-connector = "HDMI-1";
-          preview-size-scale = lib.gvariant.mkDouble 0.0;
+          preview-size-scale = 0.0;
           scroll-action = "cycle-windows";
           scroll-to-focused-application = true;
           shift-click-action = "minimize";
@@ -114,13 +114,13 @@
           # blur-background = lib.mkForce false;
           # blur-brightness = lib.gvariant.mkDouble 0.6;
           # blur-sigma = lib.gvariant.mkDouble 30.0;
-          border-radius = lib.gvariant.mkDouble 2.40625;
+          border-radius = 2.40625;
           currency-converter = true;
-          entry-font-size = lib.gvariant.mkInt16 0;
-          monitor-count = lib.gvariant.mkInt16 2;
-          preferred-monitor = lib.gvariant.mkInt16 0;
-          scale-height = lib.gvariant.mkDouble 0.10000000000000001;
-          scale-width = lib.gvariant.mkDouble 0.10000000000000001;
+          entry-font-size = 0;
+          monitor-count = 2;
+          preferred-monitor = 0;
+          scale-height = 0.1;
+          scale-width = 0.1;
           shortcut-search = ["<Alt>space"];
           show-panel-icon = false;
           text-color = "rgba(190, 190, 192, 0.95)";
@@ -139,19 +139,19 @@
 
           "org/gnome/shell/extensions/space-iflow-randomwallpaper/sources/reddit/1741025398760" = {
             allow-sfw = true;
-            image-ratio2 = lib.gvariant.mkInt16 9;
+            image-ratio2 = 9;
             subreddits = "wallpaper";
           };
 
           "org/gnome/shell/extensions/space-iflow-randomwallpaper" = {
             auto-fetch = true;
-            change-type = lib.gvariant.mkInt16 2;
+            change-type = 2;
             fetch-on-startup = false;
             hide-panel-icon = true;
-            history-length = lib.gvariant.mkInt16 5;
-            hours = lib.gvariant.mkInt16 12;
-            minutes = lib.gvariant.mkInt16 1;
-            log-level = lib.gvariant.mkInt16 0;
+            history-length = 5;
+            hours = 12;
+            minutes = 1;
+            log-level = 0;
             scaling-mode = "zoom";
             sources = ["1741025398760"];
           };
