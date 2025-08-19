@@ -47,7 +47,7 @@
           "org/gnome/desktop/wm/preferences" = {
             resize-with-right-button = true;                                    # Turning on window resizing
             button-layout = "appmenu:minimize,maximize,close";
-            num-workspaces = lib.gvariant.mkUint16 6;
+            num-workspaces = 6;
           };
 
           "org/gnome/settings-daemon/plugins/power" = {
