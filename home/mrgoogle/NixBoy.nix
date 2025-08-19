@@ -74,6 +74,7 @@
     socat
     nmap
     fish
+    direnv
     zsh
     zsh-autosuggestions
     zsh-powerlevel10k
