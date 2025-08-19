@@ -43,6 +43,7 @@
     solaar
     easyeffects
     parabolic
+    dconf-editor
 
     # Gaming stuff
     bottles
