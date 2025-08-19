@@ -21,7 +21,7 @@ programs.zsh = {
       lg = "lazygit";
       pingtest = "ping 8.8.8.8";
       rebuild = "sudo nixos-rebuild switch --flake ~/Nix#NixBoy --no-write-lock-file --log-format internal-json -v |& nom --json";
-      
+      test = "sudo nixos-rebuild test --flake ~/Nix#NixBoy --no-write-lock-file --log-format internal-json -v |& nom --json";
     };
     history = {
       expireDuplicatesFirst = true;
