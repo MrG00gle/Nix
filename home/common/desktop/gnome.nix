@@ -25,112 +25,116 @@
           workspaces-only-on-primary = false;
         };
 
-          "org/gnome/desktop/interface" = {
-            accent-color = "purple";
-            color-scheme = "prefer-dark";                                       # Setting Gnome Dark theme
-            icon-theme= "Papirus";
-            show-battery-percentage = true;                                     # Show battery precentage
-            toolkit-accessibility = false;
-          };
+        "org/gnome/desktop/interface" = {
+          accent-color = "purple";
+          color-scheme = "prefer-dark";                                       # Setting Gnome Dark theme
+          icon-theme= "Papirus";
+          show-battery-percentage = true;                                     # Show battery precentage
+          toolkit-accessibility = false;
+        };
 
-          "org/gnome/desktop/privacy" = {
-            remember-recent-files = true;                                       # Show reccent files
-            report-technical-problems = false;                                  # Telemetry
-          };
+        "org/gnome/desktop/privacy" = {
+          remember-recent-files = true;                                       # Show reccent files
+          report-technical-problems = false;                                  # Telemetry
+        };
 
-          "org/gnome/desktop/screensaver" = {
-            lock-enabled = true;                                                # TODO: dont know what its doing so turn on for now
-            color-shading-type = "solid";
-            picture-options = "zoom";
-          };
+        "org/gnome/desktop/screensaver" = {
+          lock-enabled = true;                                                # TODO: dont know what its doing so turn on for now
+          color-shading-type = "solid";
+          picture-options = "zoom";
+        };
 
-          "org/gnome/desktop/wm/preferences" = {
-            resize-with-right-button = true;                                    # Turning on window resizing
-            button-layout = "appmenu:minimize,maximize,close";
-            num-workspaces = 6;
-          };
+        "org/gnome/desktop/wm/preferences" = {
+          resize-with-right-button = true;                                    # Turning on window resizing
+          button-layout = "appmenu:minimize,maximize,close";
+          num-workspaces = 6;
+        };
 
-          "org/gnome/settings-daemon/plugins/power" = {
-            # Suspend only on battery power, not while charging.
-            idle-dim = false;
-            power-button-action = "interactive";
-            power-saver-profile-on-low-battery = true;
-            sleep-inactive-ac-type = "nothing";
-          };
+        "org/gnome/settings-daemon/plugins/power" = {
+          # Suspend only on battery power, not while charging.
+          idle-dim = false;
+          power-button-action = "interactive";
+          power-saver-profile-on-low-battery = true;
+          sleep-inactive-ac-type = "nothing";
+        };
 
           # Extentions
-          "org/gnome/shell" = {
-            disable-user-extensions = false;
-            enabled-extensions = with pkgs.gnomeExtensions; [
-              appindicator.extensionUuid
-              bluetooth-battery-meter.extensionUuid
-              dash-to-dock.extensionUuid
-              auto-move-windows.extensionUuid
-              clipboard-indicator.extensionUuid
-              vitals.extensionUuid
-              search-light.extensionUuid
-              random-wallpaper.extensionUuid
-            ];
-          };
+        "org/gnome/shell" = {
+          disable-user-extensions = false;
+          enabled-extensions = with pkgs.gnomeExtensions; [
+            appindicator.extensionUuid
+            bluetooth-battery-meter.extensionUuid
+            dash-to-dock.extensionUuid
+            auto-move-windows.extensionUuid
+            clipboard-indicator.extensionUuid
+            vitals.extensionUuid
+            search-light.extensionUuid
+            random-wallpaper.extensionUuid
+          ];
+        };
+
+        "/org/gnome/shell/extensions/auto-move-windows" = {
+          application-list = [ "org.telegram.desktop.desktop:2" "discord.desktop:2" "steam.desktop:3" ];
+        };
 
           # Extension configurations
-          "org/gnome/shell/extensions/dash-to-dock" = {
-            application-counter-overrides-notifications = true;
-            background-color = "rgb(36,36,36)";
-            background-opacity = lib.gvariant.mkDouble 0.80000000000000004;
-            click-action = "minimize";
-            custom-background-color = true;
-            custom-theme-shrink = false;
-            dash-max-icon-size = lib.gvariant.mkInt16 46;
-            dock-position = "BOTTOM";
-            extend-height=false;
-            height-fraction = lib.gvariant.mkDouble 0.90000000000000002;
-            hide-tooltip = false;
-            icon-size-fixed = false;
-            intellihide-mode = "FOCUS_APPLICATION_WINDOWS";
-            middle-click-action = "launch";
-            multi-monitor = true;
-            preferred-monitor = lib.gvariant.mkInt16 2;
-            preferred-monitor-by-connector = "HDMI-1";
-            preview-size-scale = lib.gvariant.mkDouble 0.0;
-            scroll-action = "cycle-windows";
-            scroll-to-focused-application = true;
-            shift-click-action = "minimize";
-            shift-middle-click-action = "launch";
-            show-apps-always-in-the-edge = true;
-            show-favorites = true;
-            show-icons-emblems = true;
-            show-icons-notifications-counter = false;
-            show-mounts = false;
-            transparency-mode = "FIXED";
-          };
+        "org/gnome/shell/extensions/dash-to-dock" = {
+          application-counter-overrides-notifications = true;
+          background-color = "rgb(36,36,36)";
+          background-opacity = lib.gvariant.mkDouble 0.80000000000000004;
+          click-action = "minimize";
+          custom-background-color = true;
+          custom-theme-shrink = false;
+          dash-max-icon-size = lib.gvariant.mkInt16 46;
+          dock-position = "BOTTOM";
+          extend-height=false;
+          height-fraction = lib.gvariant.mkDouble 0.90000000000000002;
+          hide-tooltip = false;
+          icon-size-fixed = false;
+          intellihide-mode = "FOCUS_APPLICATION_WINDOWS";
+          middle-click-action = "launch";
+          multi-monitor = true;
+          preferred-monitor = lib.gvariant.mkInt16 2;
+          preferred-monitor-by-connector = "HDMI-1";
+          preview-size-scale = lib.gvariant.mkDouble 0.0;
+          scroll-action = "cycle-windows";
+          scroll-to-focused-application = true;
+          shift-click-action = "minimize";
+          shift-middle-click-action = "launch";
+          show-apps-always-in-the-edge = true;
+          show-favorites = true;
+          show-icons-emblems = true;
+          show-icons-notifications-counter = false;
+          show-mounts = false;
+          transparency-mode = "FIXED";
+        };
 
-          "org/gnome/shell/extensions/search-light" = {
-            background-color = "rgb(40, 40, 44)";
-            # blur-background = lib.mkForce false;
-            # blur-brightness = lib.gvariant.mkDouble 0.6;
-            # blur-sigma = lib.gvariant.mkDouble 30.0;
-            border-radius = lib.gvariant.mkDouble 2.40625;
-            currency-converter = true;
-            entry-font-size = lib.gvariant.mkInt16 0;
-            monitor-count = lib.gvariant.mkInt16 2;
-            preferred-monitor = lib.gvariant.mkInt16 0;
-            scale-height = lib.gvariant.mkDouble 0.10000000000000001;
-            scale-width = lib.gvariant.mkDouble 0.10000000000000001;
-            shortcut-search = ["<Alt>space"];
-            show-panel-icon = false;
-            text-color = "rgba(190, 190, 192, 0.95)";
-            unit-converter = true;
-          };
+        "org/gnome/shell/extensions/search-light" = {
+          background-color = "rgb(40, 40, 44)";
+          # blur-background = lib.mkForce false;
+          # blur-brightness = lib.gvariant.mkDouble 0.6;
+          # blur-sigma = lib.gvariant.mkDouble 30.0;
+          border-radius = lib.gvariant.mkDouble 2.40625;
+          currency-converter = true;
+          entry-font-size = lib.gvariant.mkInt16 0;
+          monitor-count = lib.gvariant.mkInt16 2;
+          preferred-monitor = lib.gvariant.mkInt16 0;
+          scale-height = lib.gvariant.mkDouble 0.10000000000000001;
+          scale-width = lib.gvariant.mkDouble 0.10000000000000001;
+          shortcut-search = ["<Alt>space"];
+          show-panel-icon = false;
+          text-color = "rgba(190, 190, 192, 0.95)";
+          unit-converter = true;
+        };
 
           "org/gnome/shell/extensions/vitals" = {
             hot-sensors=["_system_load_1m_" "_processor_usage_" "_memory_usage_" "_temperature_amdgpu_edge_"];
-            position-in-panel = lib.gvariant.mkInt16 0;
+            position-in-panel = 0;
             show-fan = false;
             show-gpu = false;
             show-system = false;
             show-voltage = false;
-            update-time = lib.gvariant.mkInt16 1;
+            update-time = 1;
           };
 
           "org/gnome/shell/extensions/space-iflow-randomwallpaper/sources/reddit/1741025398760" = {
