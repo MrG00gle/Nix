@@ -32,6 +32,7 @@
     audacity
     vlc
     kdePackages.kdenlive
+    davinci-resolve
     helvum
 #    gnome-boxes
     virtualbox
