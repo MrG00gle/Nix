@@ -4,7 +4,7 @@
   # Defining period of store cleaning
   nix.gc = {
     automatic = true;
-    dates = "dayly";
-    options = "--delete-older-than 3d";
+    dates = "weekly";
+    options = "--delete-older-than 10d";
   };
 }
