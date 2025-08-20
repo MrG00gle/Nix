@@ -38,4 +38,14 @@
     ollama
     docker
   ];
+
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      glib # conteins(libglib-2.0.so.0, libgthread-2.0.so.0)
+      glibc
+      zlib
+    ];
+  };
+
 }
