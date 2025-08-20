@@ -60,6 +60,7 @@
     # vscodium
     jetbrains.pycharm-community
     # jetbrains.pycharm-professional
+    devenv
 
     # CLI utils
     nix-output-monitor
