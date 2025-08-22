@@ -37,6 +37,15 @@
     rustc
     ollama
     docker
+    python311Full
+    python311Packages.pyqt5
+    python311Packages.numpy
+    python311Packages.pyserial
+    python311Packages.pyyaml
+    python311Packages.pyvista
+    python311Packages.pandas
+    python311Packages.pyaml
+
   ];
 
   # programs.nix-ld = {
