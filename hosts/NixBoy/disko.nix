@@ -61,4 +61,12 @@
   fileSystems."/persist".neededForBoot = true;
   fileSystems."/var/log".neededForBoot = true;
 
+  boot = {
+    kernelParams = [
+      "resume_offset=269568"
+    ];
+    resumeDevice = "/dev/disk/by-label/nixos";
+  };
+
+
 }
