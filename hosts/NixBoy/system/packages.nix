@@ -38,7 +38,7 @@
     ollama
     docker
 
-    # python311Full
+    python311Full
     # python311Packages.pyqt5
     # python311Packages.numpy
     # python311Packages.pyserial
