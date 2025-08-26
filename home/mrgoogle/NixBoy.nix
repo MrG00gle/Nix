@@ -22,7 +22,6 @@
   home.packages = with pkgs; [
 
     # Desktop apps
-#    firefox
     ungoogled-chromium
     telegram-desktop
     discord
@@ -34,7 +33,6 @@
     kdePackages.kdenlive
     davinci-resolve
     helvum
-#    gnome-boxes
     virtualbox
     pdfarranger
     wireshark
@@ -63,8 +61,6 @@
     devenv
 
     # CLI utils
-    nix-output-monitor
-    fastfetch
     lazygit
     eza
     nix-index
@@ -73,8 +69,8 @@
     socat
     nmap
     fish
-    direnv
     zsh
+    direnv
     zsh-autosuggestions
     zsh-powerlevel10k
 

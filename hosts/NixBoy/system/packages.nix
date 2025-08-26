@@ -10,6 +10,7 @@
     gnome-music
     gnome-photos
     gnome-maps
+    gnome-boxes
     geary # mail client
     epiphany # gnome browser
     gnome-tour
@@ -24,38 +25,37 @@
   programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
-    wget
+    # System tools
     git
+    wget
+    curl
     file
     tree
-    nano
     ffmpeg
+    pciutils
+    mesa-demos
+    
+    # Editors
+    nano
+
+    # Services
+    ollama
+    docker
+    
+    # Status bars and monitors
+    fastfetch
     htop
     btop
     nvtopPackages.full
+
+    # Nix tools
     nix-output-monitor
-    pciutils
-    mesa-demos
+
+    # Programming languages and libraries
     gcc
     go
     rustc
-    ollama
-    docker
-
     python311Full
-    # python311Packages.pyqt5
-    # python311Packages.numpy
-    # python311Packages.pyserial
-    # python311Packages.pyyaml
-    # python311Packages.pyvista
-    # python311Packages.pandas
-    # python311Packages.pyaml
-    # zlib
-    # libffi
-    # glibc
-    # glib
-    # xorg.libXrender
-    # liblo
 
   ];
 
