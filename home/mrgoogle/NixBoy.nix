@@ -67,10 +67,6 @@
     fastfetch
     lazygit
     eza
-    ffmpeg
-    htop
-    btop
-    nvtopPackages.panthor
     nix-index
     unzip
     scrot

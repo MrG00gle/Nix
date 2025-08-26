@@ -29,6 +29,11 @@
     file
     tree
     nano
+    ffmpeg
+    htop
+    btop
+    nvtopPackages.nvidia
+    nvtopPackages.panthor
     nix-output-monitor
     pciutils
     mesa-demos
