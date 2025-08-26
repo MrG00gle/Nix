@@ -32,8 +32,7 @@
     ffmpeg
     htop
     btop
-    nvtopPackages.nvidia
-    nvtopPackages.panthor
+    nvtopPackages.full
     nix-output-monitor
     pciutils
     mesa-demos
