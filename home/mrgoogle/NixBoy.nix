@@ -17,7 +17,7 @@
   services.flatpak.update.auto.enable = false;
   services.flatpak.packages = [
     { appId = "app.zen_browser.zen"; origin = "flathub";  }
-    { appId = "com.usebottles.bottles"; origin = "flathub";  }
+    # { appId = "com.usebottles.bottles"; origin = "flathub";  }
     { appId = "ru.linux_gaming.PortProton"; origin = "flathub";  }
   ];
 
@@ -47,7 +47,7 @@
     dconf-editor
 
     # Gaming stuff
-    # bottles
+    bottles
     mission-center
     mangohud
     sidequest
