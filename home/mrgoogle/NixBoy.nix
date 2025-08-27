@@ -17,6 +17,7 @@
   services.flatpak.update.auto.enable = false;
   services.flatpak.packages = [
     { appId = "app.zen_browser.zen"; origin = "flathub";  }
+    { appId = "com.usebottles.bottles"; origin = "flathub";  }
   ];
 
   home.packages = with pkgs; [
