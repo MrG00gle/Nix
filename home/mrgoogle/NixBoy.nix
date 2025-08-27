@@ -46,7 +46,7 @@
     dconf-editor
 
     # Gaming stuff
-    bottles
+    # bottles
     mission-center
     mangohud
     sidequest
