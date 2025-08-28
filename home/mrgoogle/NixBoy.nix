@@ -30,6 +30,7 @@
     teams-for-linux
     caprine
     obsidian
+    obs-studio
     audacity
     vlc
     kdePackages.kdenlive
