@@ -21,6 +21,10 @@
     { appId = "ru.linux_gaming.PortProton"; origin = "flathub";  }
   ];
 
+  (pkgs.bottles.override{
+    removeWarningPopup = true;
+  })
+
   home.packages = with pkgs; [
 
     # Desktop apps
