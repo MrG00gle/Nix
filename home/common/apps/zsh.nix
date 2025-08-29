@@ -20,8 +20,9 @@ programs.zsh = {
       ls = "eza";
       lg = "lazygit";
       pingtest = "ping 8.8.8.8";
-      rebuild = "sudo nixos-rebuild switch --flake ~/Nix#NixBoy --no-write-lock-file --log-format internal-json -v |& nom --json";
+      rebuild = "sudo nixos-rebuild switch --flake ~/Nix#NixBoy --no-write-lock-file --log-format internal-json -v |& nom --json && nix-store --gc";
       rebuild-test = "sudo nixos-rebuild test --flake ~/Nix#NixBoy --no-write-lock-file --log-format internal-json -v |& nom --json";
+      store-gc = "nix-store --gc";
     };
     history = {
       expireDuplicatesFirst = true;
