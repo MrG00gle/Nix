@@ -67,6 +67,7 @@
     lazygit
     eza
     nix-index
+    nix-init    # Command line interactive tool to generate Nix packages from URLs
     unzip
     scrot
     socat
