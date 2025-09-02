@@ -38,6 +38,7 @@
     helvum
     virtualbox
     pdfarranger
+    libreoffice-still
     wireshark
     qbittorrent
     gnome-extension-manager
