@@ -6,7 +6,7 @@
   #   userControlled.enable = true;
   # };
 
-  networking.hostName = "nixos"; # Hostname.
+  networking.hostName = "NixBoy"; # Hostname.
 
   # Firewall rules for Steam
   programs.steam = {

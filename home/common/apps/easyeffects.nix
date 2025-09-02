@@ -1,6 +1,4 @@
 {lib, ...}: {
-
-#  programs.dconf.enable = true;
   services.easyeffects.extraPresets = {
     tonor-tc20 = {
       input = {
