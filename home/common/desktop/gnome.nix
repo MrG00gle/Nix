@@ -74,7 +74,15 @@
         };
 
         "org/gnome/shell/extensions/auto-move-windows" = {
-          application-list = [ "org.telegram.desktop.desktop:2" "discord.desktop:2" "steam.desktop:3" ];
+          application-list = [ 
+           "org.telegram.desktop.desktop:2"
+           "discord.desktop:2" 
+           "steam.desktop:3" 
+           "com.usebottles.bottles.desktop:3" 
+           "ru.linux_gaming.PortProton.desktop:3" 
+           "pycharm-community.desktop:4" 
+           "code.desktop:4" 
+           ];
         };
 
           # Extension configurations
