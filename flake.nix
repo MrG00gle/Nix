@@ -38,6 +38,15 @@
         ];
       };
 
+      ServerBoy = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/ServerBoy/configuration.nix
+          disko.nixosModules.disko
+        ];
+      };
+
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         system = "x86_64-linux";
