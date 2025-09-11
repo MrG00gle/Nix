@@ -6,6 +6,7 @@
     tree
     nano
     nix-output-monitor
+    ncdu
     docker
     python310
   ];
