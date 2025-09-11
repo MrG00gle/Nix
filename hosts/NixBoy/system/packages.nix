@@ -47,6 +47,7 @@
     htop
     btop
     nvtopPackages.full
+    ncdu
 
     # Nix tools
     nix-output-monitor
