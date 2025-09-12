@@ -4,7 +4,7 @@
 # Declaring package sources
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    # nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     disko = {
       url = "github:nix-community/disko/latest";
@@ -16,7 +16,7 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, nix-flatpak, disko, home-manager, ... }: {
+  outputs = inputs@{ nixpkgs, nixpkgs-unstable, nix-flatpak, disko, home-manager, ... }: {
     nixosConfigurations = {
 
       NixBoy = nixpkgs.lib.nixosSystem {
