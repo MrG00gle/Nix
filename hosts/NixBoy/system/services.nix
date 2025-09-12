@@ -8,12 +8,14 @@
     desktopManager.gnome.enable = true;
   };
 
-  services.flatpak.enable = true;
+  services.flatpak = {
+    enable = true;
+  };
 
   services.btrfs.autoScrub = {
-  enable = true;
-  interval = "weekly";
-  fileSystems = [ "/" ];
-};
+    enable = true;
+    interval = "weekly";
+    fileSystems = [ "/" ];
+  };
 
 }
