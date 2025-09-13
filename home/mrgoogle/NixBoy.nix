@@ -25,6 +25,7 @@
 
     # Desktop apps
     ungoogled-chromium
+    tor-browser
     telegram-desktop
     discord
     teams-for-linux

@@ -25,6 +25,19 @@ programs.zsh = {
       rebuild-test = "sudo nixos-rebuild test --flake ~/Nix#NixBoy --no-write-lock-file --log-format internal-json -v |& nom --json";
       store-gc = "nix-store --gc";
       speedtest = "speedtest-cli";
+      write_iso = ''
+        function _write_iso() {
+          if [[ -z "$1" ]]; then
+            echo "Error: Please provide a device name (e.g., sdb)."
+            return 1
+          fi
+          if [[ -z "$2" ]]; then
+            echo "Error: Please provide the path to the ISO file."
+            return 1
+          fi
+          umount /dev/$1* && sudo dd if="$2" of=/dev/$1 bs=4M status=progress
+        }; _write_iso
+      '';
     };
     history = {
       expireDuplicatesFirst = true;
