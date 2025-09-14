@@ -26,7 +26,7 @@
   };
 
   # Config for VirtualBox
-  users.extraGroups.vboxusers.members = [ "mrgoogle" ];
+  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
 
   nix.settings.trusted-users = [ "root" "mrgoogle" ];
 
