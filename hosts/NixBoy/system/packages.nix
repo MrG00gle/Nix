@@ -36,8 +36,8 @@
     mesa-demos
 
     # Virtualization
-    qemu
-    libvirt
+    # qemu
+    # libvirt
     
     # Editors
     nano
