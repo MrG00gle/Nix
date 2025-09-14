@@ -38,15 +38,14 @@
     davinci-resolve
     helvum
     gnome-boxes
-    # (virt-manager.overrideAttrs (oldAttrs: {
-    #   nativeBuildInputs = oldAttrs.nativeBuildInputs or [] ++ [ makeWrapper ];
-    #   postInstall = oldAttrs.postInstall or "" + ''
-    #     wrapProgram $out/bin/virt-manager \
-    #       --set GDK_BACKEND x11
-    #   '';
-    # }))
-
-    # virtualbox                # Disbled due to "NS_ERROR_FAILURE (0X80004005)" (https://wiki.nixos.org/wiki/VirtualBox). Enabled via virtualiztion.nix
+    (virt-manager.overrideAttrs (oldAttrs: {
+      nativeBuildInputs = oldAttrs.nativeBuildInputs or [] ++ [ makeWrapper ];
+      postInstall = oldAttrs.postInstall or "" + ''
+        wrapProgram $out/bin/virt-manager \
+          --set GDK_BACKEND x11
+      '';
+    }))
+    virtualbox                # Disbled due to "NS_ERROR_FAILURE (0X80004005)" (https://wiki.nixos.org/wiki/VirtualBox). Enabled via virtualiztion.nix
     pdfarranger
     libreoffice-still
     wireshark
