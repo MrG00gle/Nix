@@ -37,7 +37,15 @@
     kdePackages.kdenlive
     davinci-resolve
     helvum
-    virt-manager
+    
+    (virt-manager.overrideAttrs (oldAttrs: {
+      nativeBuildInputs = oldAttrs.nativeBuildInputs or [] ++ [ makeWrapper ];
+      postInstall = oldAttrs.postInstall or "" + ''
+        wrapProgram $out/bin/virt-manager \
+          --set GDK_BACKEND x11
+      '';
+    }))
+
     virtualbox
     pdfarranger
     libreoffice-still

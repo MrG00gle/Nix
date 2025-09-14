@@ -1,7 +1,5 @@
 { pkgs, lib, ... }: {
 
-
-
   users = {
     defaultUserShell = lib.mkForce pkgs.zsh; # Setting default Shell to fish (But with lowe priority 1000)
 
@@ -21,6 +19,7 @@
         "input"
         "kvm"
         "qemu-libvirtd"
+        "libvirtd"
       ];
       packages = with pkgs; []; # Packages are handled by home-manager
     };
