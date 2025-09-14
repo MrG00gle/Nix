@@ -34,6 +34,9 @@
     ffmpeg
     pciutils
     mesa-demos
+
+    # Virtualization
+    qemu
     
     # Editors
     nano

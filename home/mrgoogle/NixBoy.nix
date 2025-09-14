@@ -46,7 +46,7 @@
     #   '';
     # }))
 
-    virtualbox
+    # virtualbox                # Disbled due to "NS_ERROR_FAILURE (0X80004005)" (https://wiki.nixos.org/wiki/VirtualBox). Enabled via virtualiztion.nix
     pdfarranger
     libreoffice-still
     wireshark
@@ -78,7 +78,7 @@
     lazygit
     eza
     nix-index
-    nix-init    # Command line interactive tool to generate Nix packages from URLs
+    nix-init                  # Command line interactive tool to generate Nix packages from URLs
     unzip
     scrot
     socat

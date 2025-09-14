@@ -25,6 +25,9 @@
     };
   };
 
+  # Config for VirtualBox
+  users.extraGroups.vboxusers.members = [ "mrgoogle" ];
+
   nix.settings.trusted-users = [ "root" "mrgoogle" ];
 
   # Enable automatic login for the user.

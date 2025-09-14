@@ -1,15 +1,27 @@
 { lib, pkgs, ... }: {
 
-  virtualisation = {
-    libvirtd = {
+  # Enable libvirtd for virtualization used for virt-manager
+  # virtualisation = {
+  #   libvirtd = {
+  #     enable = true;
+  #     qemu.vhostUserPackages = with pkgs; [ virtiofsd ];
+  #   };
+  #   spiceUSBRedirection = {
+  #     enable = true;
+  #   };
+  # };
+  # programs.virt-manager.enable = true;
+
+  # Enable VirtualBox
+  virtualisation ={
+    virtualbox.host = {
       enable = true;
-      qemu.vhostUserPackages = with pkgs; [ virtiofsd ];
+      enableExtensionPack = true;
     };
-    spiceUSBRedirection = {
+    guest = {
       enable = true;
+      dragAndDrop = true;
     };
   };
   
-  programs.virt-manager.enable = true;
-
 }
