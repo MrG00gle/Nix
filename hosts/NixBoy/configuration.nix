@@ -16,6 +16,7 @@
     ./system/bluetooth.nix
     ./system/store.nix
     ./system/users.nix
+    ./system/virtualisation.nix
   ]; #++ (lib.mapAttrsToList (name: path: import path) modulePaths);
   
   # Bootloader.

@@ -45,7 +45,7 @@
           --set GDK_BACKEND x11
       '';
     }))
-    virtualbox                # Disbled due to "NS_ERROR_FAILURE (0X80004005)" (https://wiki.nixos.org/wiki/VirtualBox). Enabled via virtualiztion.nix
+    # virtualbox                # Disbled due to "NS_ERROR_FAILURE (0X80004005)" (https://wiki.nixos.org/wiki/VirtualBox). Enabled via virtualiztion.nix
     pdfarranger
     libreoffice-still
     wireshark
