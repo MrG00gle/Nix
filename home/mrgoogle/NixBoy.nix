@@ -58,7 +58,14 @@
     dconf-editor
 
     # Gaming stuff
-    bottles
+    (bottles.overrideAttrs (oldAttrs: {
+      nativeBuildInputs = oldAttrs.nativeBuildInputs or [] ++ [ makeWrapper ];
+      postInstall = oldAttrs.postInstall or "" + ''
+        wrapProgram $out/bin/virt-manager \
+          --prefix PATH : ${pkgs.nvidia-offload}/bin \
+          --run "nvidia-offload" \
+      '';
+    }))
     mission-center
     mangohud
     sidequest
