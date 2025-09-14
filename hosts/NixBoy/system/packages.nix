@@ -37,6 +37,7 @@
 
     # Virtualization
     qemu
+    # libvirt
     
     # Editors
     nano

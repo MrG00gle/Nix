@@ -37,7 +37,7 @@
     kdePackages.kdenlive
     davinci-resolve
     helvum
-    
+    gnome-boxes
     # (virt-manager.overrideAttrs (oldAttrs: {
     #   nativeBuildInputs = oldAttrs.nativeBuildInputs or [] ++ [ makeWrapper ];
     #   postInstall = oldAttrs.postInstall or "" + ''
