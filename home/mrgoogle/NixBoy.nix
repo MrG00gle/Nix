@@ -37,6 +37,7 @@
     kdePackages.kdenlive
     davinci-resolve
     helvum
+    qemu
     virtualbox
     pdfarranger
     libreoffice-still
