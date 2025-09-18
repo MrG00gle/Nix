@@ -13,6 +13,7 @@
         "video"
         "audio"
         "tty"
+        "dialout"
         "docker"
         "flatpak"
         "plugdev"
