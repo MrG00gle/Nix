@@ -24,24 +24,4 @@
     fileSystems = [ "/" ];
   };
 
-# services.mosquitto = {
-#   enable = true;
-#   listeners = [
-#     {
-#       # acl = [ 
-#       #   "readwrite home/temp"
-#       #   "readwrite home/dev1"
-#       #   "readwrite home/dev2"
-#       # ];
-#       omitPasswordAuth = true;
-#       settings.allow_anonymous = true;
-#     }
-#   ];
-# };
-
-# networking.firewall = {
-#   enable = true;
-#   allowedTCPPorts = [ 1883 ];
-# };
-
 }
