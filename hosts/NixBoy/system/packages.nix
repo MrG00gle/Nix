@@ -34,6 +34,10 @@
     ffmpeg
     pciutils
     mesa-demos
+    
+    # VPN (wineguard)
+    wireguard
+    wireguard-tools
 
     # Virtualization
     # qemu
