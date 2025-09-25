@@ -7,6 +7,15 @@
   # };
 
   networking.hostName = "NixBoy"; # Hostname.
+  
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [
+      80  # For Nginx HTTP
+      443
+      51820
+    ];
+  };
 
   # Firewall rules for Steam
   programs.steam = {
