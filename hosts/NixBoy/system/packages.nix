@@ -38,6 +38,7 @@
     # VPN (wineguard)
     wireguard
     wireguard-tools
+    wireguard-ui
 
     # Virtualization
     # qemu
