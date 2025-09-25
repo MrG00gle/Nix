@@ -36,9 +36,8 @@
     mesa-demos
     
     # VPN (wineguard)
-    # wireguard
-    # wireguard-tools
-    # wireguard-ui
+    wireguard-tools
+    wireguard-ui
 
     # Virtualization
     # qemu

@@ -21,6 +21,8 @@
     ];
   };
 
+  networking.wg-quick.interfaces.wg0.configFile = "/home/mrgoogle/WireGuard/wg0.conf";
+
   # Firewall rules for Steam
   programs.steam = {
     enable = true;
