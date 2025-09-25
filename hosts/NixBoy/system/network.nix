@@ -1,27 +1,18 @@
 {
-
   networking.networkmanager.enable = true;
-  # networking.wireless = {
-  #   enable = true;
-  #   userControlled.enable = true;
-  # };
-
   networking.hostName = "NixBoy"; # Hostname.
   
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [
-      80  # For Nginx HTTP
-      443
-      51820
+      51820 # Wireguard
     ];
     allowedUDPPorts = [ 
       51820 # Wireguard
-      443
     ];
   };
 
-  networking.wg-quick.interfaces.wg0.configFile = "/home/mrgoogle/WireGuard/wg0.conf";
+  networking.wg-quick.interfaces.home0.configFile = "/home/mrgoogle/WireGuard/home0.conf";
 
   # Firewall rules for Steam
   programs.steam = {
