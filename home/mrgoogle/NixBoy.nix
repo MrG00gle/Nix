@@ -101,8 +101,8 @@
 
     # Other
     papirus-icon-theme
-    # sstp
-    # dnslookup
+    sstp
+    dnslookup
   ];
 
 }
