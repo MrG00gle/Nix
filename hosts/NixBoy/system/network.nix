@@ -15,6 +15,10 @@
       443
       51820
     ];
+    allowedUDPPorts = [ 
+      51820 # Wireguard
+      443
+    ];
   };
 
   # Firewall rules for Steam
