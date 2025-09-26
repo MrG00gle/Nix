@@ -57,6 +57,7 @@
     easyeffects
     parabolic
     dconf-editor
+    zenmap
 
     # Gaming stuff
     bottles
