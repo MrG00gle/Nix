@@ -25,8 +25,8 @@ programs.zsh = {
       rebuild-test = "sudo nixos-rebuild test --flake ~/Nix#NixBoy --no-write-lock-file --log-format internal-json -v |& nom --json";
       store-gc = "nix-store --gc";
       speedtest = "speedtest-cli";
-      wg-home-up = "sudo systemctl start wg-quick-home0.service";
-      wg-home-down = "sudo systemctl stop wg-quick-home0.service";
+      homeup = "sudo systemctl start wg-quick-home0.service";
+      homedown = "sudo systemctl stop wg-quick-home0.service";
 
     };
     history = {
