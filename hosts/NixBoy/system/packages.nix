@@ -39,6 +39,10 @@
     wireguard-tools
     wireguard-ui
 
+    # VPN (SSTP)
+    sstp
+    networkmanager-sstp
+
     # Virtualization
     # qemu
     # libvirt
