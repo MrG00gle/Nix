@@ -1,18 +1,30 @@
-{
-  networking.networkmanager.enable = true;
-  networking.hostName = "NixBoy"; # Hostname.
+{ pkgs, ... }: {
   
-  networking.firewall = {
-    enable = true;
-    allowedTCPPorts = [
-      51820 # Wireguard
-    ];
-    allowedUDPPorts = [ 
-      51820 # Wireguard
-    ];
-  };
+  networking = {
+    hostName = "NixBoy";
 
-  networking.wg-quick.interfaces.home0.configFile = "/home/mrgoogle/WireGuard/home0.conf";
+    networkmanager = {
+      enable = true;
+      plugins = with pkgs; [ 
+        networkmanager-openvpn
+        networkmanager-sstp
+      ];
+    };
+    
+    wg-quick.interfaces.home0.configFile = "/home/mrgoogle/WireGuard/home0.conf";
+    
+    firewall = {
+      enable = true;
+      allowedTCPPorts = [
+        51820 # Wireguard
+        443
+      ];
+      allowedUDPPorts = [ 
+        51820 # Wireguard
+        443
+      ];
+    };
+  };
 
   # Firewall rules for Steam
   programs.steam = {
