@@ -58,6 +58,7 @@
     parabolic
     dconf-editor
     zenmap
+    peazip
 
     # Gaming stuff
     bottles
