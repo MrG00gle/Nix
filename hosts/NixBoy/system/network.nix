@@ -18,11 +18,13 @@
       allowedTCPPorts = [
         51820 # Wireguard
         3389 # RDP
+        3390 # RDP
         443
       ];
       allowedUDPPorts = [ 
         51820 # Wireguard
         3389 # RDP
+        3390 # RDP
         443
       ];
     };
