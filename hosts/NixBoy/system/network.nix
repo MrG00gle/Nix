@@ -22,6 +22,7 @@
       ];
       allowedUDPPorts = [ 
         51820 # Wireguard
+        3389 # RDP
         443
       ];
     };
