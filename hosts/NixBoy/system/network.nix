@@ -17,6 +17,7 @@
       enable = true;
       allowedTCPPorts = [
         51820 # Wireguard
+        3389 # RDP
         443
       ];
       allowedUDPPorts = [ 
