@@ -85,6 +85,7 @@
     scrot
     socat
     nmap
+    speedtest-cli
     fish
     zsh
     direnv
