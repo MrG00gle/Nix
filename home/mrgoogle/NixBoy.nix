@@ -74,6 +74,7 @@
     # vscodium
     jetbrains.pycharm-community
     # jetbrains.pycharm-professional
+    jetbrains.goland
     devenv
 
     # CLI utils
