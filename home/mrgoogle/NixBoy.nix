@@ -60,6 +60,7 @@
     zenmap
     peazip
 
+
     # Gaming stuff
     bottles
     mission-center
@@ -69,13 +70,16 @@
     # lenovo-legion
     gamemode
 
+
     # Coding stuff
+    devenv
     vscode
     # vscodium
     jetbrains.pycharm-community
     # jetbrains.pycharm-professional
     jetbrains.goland
-    devenv
+    glade
+    
 
     # CLI utils
     lazygit
@@ -93,6 +97,7 @@
     zsh-autosuggestions
     zsh-powerlevel10k
 
+
     # GNOME extentions
     gnomeExtensions.appindicator
     gnomeExtensions.bluetooth-battery-meter
@@ -102,6 +107,7 @@
     gnomeExtensions.vitals
     gnomeExtensions.search-light
     gnomeExtensions.random-wallpaper
+
 
     # Other
     papirus-icon-theme
