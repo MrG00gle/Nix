@@ -11,7 +11,11 @@
       ];
     };
     
-    wg-quick.interfaces.home0.configFile = "/home/mrgoogle/WireGuard/home0.conf";
+  # ================================== Wireguard config ==========================================
+    
+    # wg-quick.interfaces.home0.configFile = "/home/mrgoogle/WireGuard/home0.conf";
+
+  # ==============================================================================================
     
     firewall = {
       enable = true;
