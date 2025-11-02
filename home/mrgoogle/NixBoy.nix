@@ -20,6 +20,7 @@
     { appId = "net.codelogistics.webapps"; origin = "flathub";  }
     { appId = "ru.linux_gaming.PortProton"; origin = "flathub";  }
     { appId = "com.emqx.MQTTX"; origin = "flathub";  }
+    { appId = "org.gnome.Glade"; origin = "flathub";  }
   ];
 
   home.packages = with pkgs; [
@@ -78,7 +79,7 @@
     jetbrains.pycharm-community
     # jetbrains.pycharm-professional
     jetbrains.goland
-    glade
+    # glade
     
 
     # CLI utils
