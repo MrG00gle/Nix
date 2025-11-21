@@ -80,7 +80,13 @@
     # jetbrains.pycharm-professional
     jetbrains.goland
     # glade
-    
+
+
+    # 3D Modeling / Animation / Design
+    bambu-studio
+    orca-slicer
+    blender
+    freecad-wayland
 
     # CLI utils
     lazygit
