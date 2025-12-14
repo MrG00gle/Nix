@@ -68,7 +68,7 @@
     gcc
     go
     rustc
-    python311Full
+    # python311Full
 
   ];
 
