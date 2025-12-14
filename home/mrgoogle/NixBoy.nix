@@ -61,6 +61,7 @@
     dconf-editor
     zenmap
     peazip
+    gearlever
 
 
     # Gaming stuff
