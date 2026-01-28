@@ -62,6 +62,7 @@
     zenmap
     peazip
     gearlever
+    sdrpp
 
 
     # Gaming stuff
