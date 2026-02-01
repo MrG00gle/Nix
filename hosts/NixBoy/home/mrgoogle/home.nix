@@ -1,11 +1,15 @@
-{ config, pkgs, flake-inputs, lib, ... }:
+{ config, pkgs, lib, flake-inputs, ... }:
 {
+  home.username = lib.mkDefault "mrgoogle";
+  home.homeDirectory = lib.mkDefault "/home/${config.home.username}";
+  home.stateVersion = "25.11";
+  programs.home-manager.enable = true;
+
   imports = [
-    ./home.nix
-    ../common/apps/git.nix
-    ../common/apps/zsh.nix
-    ../common/apps/easyeffects.nix
-    ../common/desktop/gnome.nix
+    ../app-configuration/git.nix
+    ../app-configuration/zsh.nix
+    ../app-configuration/easyeffects.nix
+    ../desktop/gnome.nix
   ];
 
   # Add a new remote. Keep the default one (flathub)

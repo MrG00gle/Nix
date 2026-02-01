@@ -30,7 +30,7 @@
             home-manager.extraSpecialArgs.flake-inputs = inputs;
             home-manager.users.mrgoogle.imports = [
               nix-flatpak.homeManagerModules.nix-flatpak
-              ./home/mrgoogle/NixBoy.nix
+              ./hosts/NixBoy/home/mrgoogle/home.nix
             ];
           }
           ./hosts/NixBoy/configuration.nix
