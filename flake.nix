@@ -38,25 +38,25 @@
         ];
       };
 
-      nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-        system = "x86_64-linux";
-        modules = [
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs.flake-inputs = inputs;
-            home-manager.users.vmboy.imports = [
-              nix-flatpak.homeManagerModules.nix-flatpak
-              ./home/vmboy/nixos.nix
-            ];
-#            home-manager.users.vmboy = import ./hosts/nixos/home/home.nix;
-          }
-          ./hosts/nixos/configuration.nix
-          disko.nixosModules.disko
-        ];
-      };
+#       nixos = nixpkgs.lib.nixosSystem {
+#         specialArgs = {inherit inputs;};
+#         system = "x86_64-linux";
+#         modules = [
+#           home-manager.nixosModules.home-manager
+#           {
+#             home-manager.useGlobalPkgs = true;
+#             home-manager.useUserPackages = true;
+#             home-manager.extraSpecialArgs.flake-inputs = inputs;
+#             home-manager.users.vmboy.imports = [
+#               nix-flatpak.homeManagerModules.nix-flatpak
+#               ./home/vmboy/nixos.nix
+#             ];
+# #            home-manager.users.vmboy = import ./hosts/nixos/home/home.nix;
+#           }
+#           ./hosts/nixos/configuration.nix
+#           disko.nixosModules.disko
+#         ];
+#       };
 
     };
   };
