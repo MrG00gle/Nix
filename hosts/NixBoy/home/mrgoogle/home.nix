@@ -25,7 +25,7 @@
     { appId = "ru.linux_gaming.PortProton"; origin = "flathub";  }
     { appId = "com.emqx.MQTTX"; origin = "flathub";  }
     { appId = "org.gnome.Glade"; origin = "flathub";  }
-    { appId = "com.bambulab.BambuStudio"; origin = "flathub";  }
+    # { appId = "com.bambulab.BambuStudio"; origin = "flathub";  }
   ];
 
   home.packages = with pkgs; [
@@ -90,7 +90,7 @@
 
 
     # 3D Modeling / Animation / Design
-    # bambu-studio
+    bambu-studio
     orca-slicer
     blender
     freecad-wayland
